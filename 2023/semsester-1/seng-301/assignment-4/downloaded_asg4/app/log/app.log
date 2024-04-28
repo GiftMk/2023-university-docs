@@ -1,0 +1,578 @@
+15:36:28.174 [main] INFO  uc.seng301.cardbattler.asg4.App - Starting application...
+15:36:47.801 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player Gift basic
+15:36:47.809 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - Valid input, created player Gift
+15:36:58.842 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player Dan monster
+15:36:58.843 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - Valid input, created player Dan
+15:37:08.880 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player Greg setup
+15:37:08.881 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - Valid input, created player Greg
+15:37:22.919 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player Jon reckless
+15:37:22.921 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - Valid input, created player Jon
+15:37:31.948 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player nah dadsas
+15:38:22.118 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: battle_deck Gift gift_deck
+15:38:26.250 [pool-2-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 67049542
+15:38:27.951 [pool-2-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:28.627 [pool-3-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 20060230
+15:38:29.073 [pool-3-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:29.694 [pool-4-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 10071456
+15:38:30.037 [pool-4-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:30.614 [pool-5-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 49881766
+15:38:31.019 [pool-5-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:31.638 [pool-6-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 44203504
+15:38:32.038 [pool-6-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:32.664 [pool-7-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 94163677
+15:38:33.066 [pool-7-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:33.688 [pool-8-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 62265044
+15:38:34.092 [pool-8-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:34.712 [pool-9-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 12801833
+15:38:36.138 [pool-9-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:36.688 [pool-10-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 68779682
+15:38:37.163 [pool-10-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:37.780 [pool-11-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 96331676
+15:38:38.187 [pool-11-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:38.804 [pool-12-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 26708437
+15:38:39.211 [pool-12-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:39.831 [pool-13-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 59820352
+15:38:40.235 [pool-13-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:40.855 [pool-14-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 1353770
+15:38:41.259 [pool-14-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:41.880 [pool-15-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 13972452
+15:38:42.385 [pool-15-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:43.005 [pool-16-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 87430998
+15:38:43.409 [pool-16-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:44.029 [pool-17-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 59699355
+15:38:44.380 [pool-17-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:44.947 [pool-18-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 75448086
+15:38:45.355 [pool-18-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:45.975 [pool-19-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 47699948
+15:38:46.377 [pool-19-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:46.999 [pool-20-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 97946536
+15:38:47.505 [pool-20-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:38:48.122 [pool-21-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 33280639
+15:38:48.529 [pool-21-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:04.271 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: battle_deck Jon jon_deck
+15:39:08.396 [pool-22-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 22916281
+15:39:08.908 [pool-22-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:09.524 [pool-23-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 10598400
+15:39:09.932 [pool-23-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:10.551 [pool-24-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 71407486
+15:39:10.902 [pool-24-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:11.471 [pool-25-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 33734439
+15:39:11.876 [pool-25-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:12.496 [pool-26-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 47484352
+15:39:13.002 [pool-26-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:13.623 [pool-27-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 89899996
+15:39:14.025 [pool-27-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:14.647 [pool-28-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 55428811
+15:39:15.152 [pool-28-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:15.773 [pool-29-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 7889323
+15:39:16.177 [pool-29-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:16.798 [pool-30-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 32233746
+15:39:17.201 [pool-30-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:17.818 [pool-31-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 1781310
+15:39:18.225 [pool-31-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:18.843 [pool-32-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 93983867
+15:39:19.247 [pool-32-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:19.869 [pool-33-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 17751597
+15:39:20.273 [pool-33-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:20.894 [pool-34-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 56649609
+15:39:21.297 [pool-34-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:21.916 [pool-35-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 69167267
+15:39:22.321 [pool-35-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:22.939 [pool-36-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 28506708
+15:39:23.345 [pool-36-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:23.961 [pool-37-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 78556320
+15:39:24.472 [pool-37-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:25.091 [pool-38-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 46534755
+15:39:26.212 [pool-38-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:26.829 [pool-39-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 19932396
+15:39:27.211 [pool-39-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:27.855 [pool-40-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 7670542
+15:39:28.204 [pool-40-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:28.762 [pool-41-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 12436646
+15:39:29.142 [pool-41-thread-1] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:39:49.420 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: play_game Gift Jon
+15:39:55.437 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: help
+15:39:58.449 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: exit
+15:39:58.450 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.409 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player Jess basic
+15:40:13.412 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - Valid input, created player Jess
+15:40:13.412 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.412 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.414 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: print Jess
+15:40:13.414 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.414 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.443 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player James monster
+15:40:13.444 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - Valid input, created player James
+15:40:13.444 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.444 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.444 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: print James
+15:40:13.444 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.445 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.461 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player Jolene setup
+15:40:13.462 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - Valid input, created player Jolene
+15:40:13.462 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.462 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.462 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: print Jolene
+15:40:13.463 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.463 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.478 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player Jacques reckless
+15:40:13.479 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - Valid input, created player Jacques
+15:40:13.479 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.479 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.479 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: print Jacques
+15:40:13.479 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.479 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.494 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player 123 basic
+15:40:13.494 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.494 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.510 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player {&James&} basic
+15:40:13.511 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.511 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.522 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player . basic
+15:40:13.522 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.522 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.536 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player #Jacques basic
+15:40:13.536 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.536 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.544 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player Josh not_a_play_style
+15:40:13.544 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.545 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.552 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player Josh .
+15:40:13.552 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.552 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.563 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: create_player Josh #&^
+15:40:13.563 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.563 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.576 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: battle_deck Jack MyFirstBattleDeck
+15:40:13.580 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.621 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.627 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.633 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.639 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.645 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.666 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.687 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.703 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.714 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.725 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.735 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.746 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.759 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.763 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.772 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.781 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.793 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.803 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.815 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.820 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.821 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.838 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: battle_deck Jack MyFirstBattleDeck
+15:40:13.838 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.843 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.847 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.851 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.854 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.857 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.867 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.877 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.888 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.895 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.903 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.911 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.914 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.924 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.934 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.938 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.941 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.943 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.951 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.960 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.964 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:13.964 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:13.976 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: battle_deck Jack MyFirstBattleDeck
+15:40:13.978 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.983 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.987 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.990 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.993 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:13.996 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.005 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.014 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.023 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.028 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.032 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.037 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.043 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.048 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.052 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.057 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.061 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.064 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.068 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.074 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.076 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:14.076 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:14.085 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: battle_deck Jack MyFirstBattleDeck
+15:40:14.085 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.088 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.090 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.091 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.093 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.095 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.097 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.099 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.101 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.102 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.104 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.106 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.108 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.110 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.112 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.118 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.124 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.130 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.134 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.139 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.143 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:14.143 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:14.155 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: battle_deck Jack MyFirstBattleDeck
+15:40:14.156 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.159 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.162 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.164 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.166 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.168 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.176 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.184 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.191 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.197 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.203 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.208 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.214 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.220 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.226 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.232 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.237 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.241 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.245 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.249 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.253 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:14.253 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:14.260 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: battle_deck Jack MyFirstBattleDeck
+15:40:14.261 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.264 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.267 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.269 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.271 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.273 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.281 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.289 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.297 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.305 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.312 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.320 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.328 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.335 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.340 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.346 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.351 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.357 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.361 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.365 [main] WARN  uc.seng301.cardbattler.asg4.cards.CardService - Falling back to offline cards
+15:40:14.369 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:14.369 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:14.380 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 30655537
+15:40:15.059 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:15.685 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 75582395
+15:40:16.081 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:16.551 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 40374923
+15:40:17.001 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:17.519 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 42591472
+15:40:17.925 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:18.438 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 2863439
+15:40:18.846 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:19.364 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 691925
+15:40:19.768 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:20.283 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 85602018
+15:40:20.689 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:21.206 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 25311006
+15:40:21.610 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:22.129 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 43487744
+15:40:22.532 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:23.049 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 74582050
+15:40:23.455 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:23.970 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 89563150
+15:40:24.375 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:24.889 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 22205600
+15:40:25.297 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:25.812 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 80604092
+15:40:26.217 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:26.734 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 20848593
+15:40:27.138 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:27.655 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 87430998
+15:40:28.060 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:28.579 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 9553721
+15:40:28.983 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:29.500 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 83225447
+15:40:29.904 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:30.422 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 45675980
+15:40:30.929 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:31.445 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 72549351
+15:40:31.851 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:32.366 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 87481592
+15:40:32.770 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:33.289 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 46457856
+15:40:33.697 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:34.209 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 49888191
+15:40:34.615 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:35.131 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 36904469
+15:40:35.537 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:36.052 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 6297941
+15:40:37.381 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:37.892 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 89558090
+15:40:39.110 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:39.567 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 69584564
+15:40:39.895 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:40.352 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 11264180
+15:40:40.759 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:41.274 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 16165939
+15:40:41.783 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:42.299 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 69599136
+15:40:42.705 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:43.220 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 47060347
+15:40:43.729 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:44.245 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 30834988
+15:40:44.640 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:45.164 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 88069166
+15:40:46.411 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:46.907 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 82105704
+15:40:47.312 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:47.753 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 47594192
+15:40:48.132 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:48.646 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 81524977
+15:40:49.054 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:49.566 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 14315573
+15:40:50.081 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:50.594 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 64014615
+15:40:50.999 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:51.440 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 28596933
+15:40:51.819 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:52.332 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 20802187
+15:40:52.740 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:53.255 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 95081386
+15:40:53.662 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:54.182 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: play_game Alex Carol
+15:40:54.204 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:40:54.204 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:40:54.244 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 72299832
+15:40:54.685 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:55.202 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 55691901
+15:40:55.607 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:56.124 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 92421852
+15:40:56.480 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:57.044 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 29802344
+15:40:57.450 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:58.069 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 74852097
+15:40:58.453 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:40:59.605 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 90359458
+15:41:00.113 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:00.625 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 85775486
+15:41:01.035 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:01.549 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 65959844
+15:41:01.956 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:02.472 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 92092092
+15:41:03.492 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:04.008 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 61965407
+15:41:04.511 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:05.031 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 25669282
+15:41:05.439 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:05.954 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 98891840
+15:41:06.360 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:06.875 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 57305373
+15:41:07.281 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:07.796 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 49936169
+15:41:08.203 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:08.717 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 3701074
+15:41:09.124 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:09.638 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 43331750
+15:41:10.148 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:10.662 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 64038662
+15:41:11.989 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:12.458 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 93946239
+15:41:12.807 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:13.245 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 62327910
+15:41:13.629 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:14.145 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 67169062
+15:41:14.555 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:15.069 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: play_game Alex Carol
+15:41:15.070 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:41:15.070 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:41:15.092 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 67049542
+15:41:15.473 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:15.912 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 11321183
+15:41:16.291 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:16.809 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 28279543
+15:41:17.212 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:17.649 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 44073668
+15:41:18.000 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:18.449 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 93108297
+15:41:18.806 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:19.367 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 56894757
+15:41:19.773 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:20.288 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 93394164
+15:41:20.696 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:21.211 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 1834107
+15:41:21.598 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:22.130 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 75525309
+15:41:22.539 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:23.054 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 62633180
+15:41:23.562 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:24.078 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 64161630
+15:41:25.357 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:25.800 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 84797028
+15:41:26.141 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:26.601 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 56594520
+15:41:27.045 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:27.559 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 63442604
+15:41:27.966 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:28.464 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 98818516
+15:41:28.888 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:29.344 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 35011819
+15:41:29.809 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:31.143 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 41850466
+15:41:31.520 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:32.066 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 57916305
+15:41:32.472 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:32.936 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 31855260
+15:41:33.291 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:33.805 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 74416026
+15:41:34.212 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:34.725 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: play_game Alex Carol
+15:41:34.725 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:41:34.726 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:41:34.746 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 2863439
+15:41:35.133 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:35.649 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 97612389
+15:41:36.055 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:36.507 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 15401633
+15:41:36.875 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:37.391 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 42129512
+15:41:37.746 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:38.211 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 75850803
+15:41:38.615 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:39.129 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 93946239
+15:41:39.537 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:40.052 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 5973663
+15:41:40.459 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:40.975 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 96965364
+15:41:41.380 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:41.896 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 95352218
+15:41:42.304 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:43.739 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 56246017
+15:41:44.096 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:44.661 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 93016201
+15:41:45.066 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:45.582 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 36361633
+15:41:45.914 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:47.324 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 92067220
+15:41:47.729 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:48.245 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 11711438
+15:41:48.597 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:49.167 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 24449083
+15:41:49.572 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:50.010 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 9744376
+15:41:50.340 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:50.803 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 19590644
+15:41:51.211 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:51.723 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 88617904
+15:41:52.132 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:53.261 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 40971261
+15:41:53.668 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:54.183 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 69279219
+15:41:54.593 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:55.108 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 48531733
+15:41:55.473 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:55.913 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 4392470
+15:41:56.333 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:57.767 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 2906250
+15:41:58.174 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:58.690 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 89189982
+15:41:59.095 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:41:59.611 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 75850803
+15:42:00.017 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:00.530 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 84220251
+15:42:00.939 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:01.394 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 62834295
+15:42:01.758 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:02.272 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 27157996
+15:42:02.679 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:03.128 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 4869446
+15:42:03.499 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:03.952 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 98360333
+15:42:04.294 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:04.834 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 57355219
+15:42:05.240 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:05.755 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 73694478
+15:42:06.161 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:06.676 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 11228035
+15:42:07.082 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:07.532 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 95283172
+15:42:07.884 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:08.416 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 16832845
+15:42:08.822 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:09.338 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 49204190
+15:42:09.848 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:10.362 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 44920699
+15:42:10.769 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:11.243 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 19272658
+15:42:11.640 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:12.102 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 79965360
+15:42:12.510 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:13.027 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 49010598
+15:42:13.389 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:13.846 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: play_game Alex Carol
+15:42:13.859 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:42:13.859 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.
+15:42:13.876 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 71950093
+15:42:14.251 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:14.766 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 37243151
+15:42:15.172 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:15.686 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 30532390
+15:42:16.096 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:16.531 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 97843505
+15:42:16.913 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:17.426 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 97590747
+15:42:17.836 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:18.350 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 93377803
+15:42:18.756 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:19.272 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 99984170
+15:42:19.678 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:20.195 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 25067275
+15:42:20.599 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:21.118 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 811734
+15:42:21.521 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:22.036 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 66149377
+15:42:22.427 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:22.956 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 84218527
+15:42:23.466 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:23.980 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 98795934
+15:42:24.388 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:24.902 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 97173708
+15:42:26.231 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:26.746 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 73193552
+15:42:27.198 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:27.633 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 91731841
+15:42:28.075 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:28.693 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 9175957
+15:42:29.099 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:29.615 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 21076084
+15:42:30.020 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:30.535 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 27821104
+15:42:31.044 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:31.559 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 674561
+15:42:31.966 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:32.484 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Fetching card with id: 197042
+15:42:32.887 [main] INFO  uc.seng301.cardbattler.asg4.cards.CardService - Api responded with status code: 200
+15:42:33.403 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: play_game Alex A_PLAYER_THAT_DOESNT_EXIST
+15:42:33.404 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User input: !q
+15:42:33.404 [main] INFO  uc.seng301.cardbattler.asg4.game.GameInterface - User quitting application.

@@ -1,0 +1,10 @@
+uc ssh command:
+
+ssh gmk49@ssh.canterbury.ac.nz -L 3306:db2.csse.canterbury.ac.nz:3306 -N
+
+.env contents:
+
+SENG365_MYSQL_HOST=localhost
+SENG365_MYSQL_USER=gmk49
+SENG365_MYSQL_PASSWORD=87694995
+SENG365_MYSQL_DATABASE=gmk49_s365_a1

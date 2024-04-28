@@ -1,0 +1,13 @@
+total 416
+-rwxr-xr-x@ 1 giftmkwara  staff  33865 Aug 22 11:08 asyc-waiting
+-rw-r--r--@ 1 giftmkwara  staff   2303 Aug 22 11:08 async-waiting.c
+-rwxr-xr-x@ 1 giftmkwara  staff  33587 Aug 22 11:32 dup2eg
+-rw-rw-r--@ 1 giftmkwara  staff    762 Jul 30  2017 dup2eg.c
+-rw-r--r--@ 1 giftmkwara  staff    117 Aug 22 11:30 my.file
+-rwxr-xr-x@ 1 giftmkwara  staff  34113 Aug 22 11:22 pipe
+-rwxr-xr-x@ 1 giftmkwara  staff  34154 Aug 22 11:27 pipe-to-upper
+-rw-r--r--@ 1 giftmkwara  staff   1956 Aug 22 11:27 pipe-to-upper.c
+-rw-rw-r--@ 1 giftmkwara  staff   1807 Jul 30  2017 pipe.c
+-rw-rw-r--@ 1 giftmkwara  staff    903 Jul 30  2017 pipedup2.c
+-rwxr-xr-x@ 1 giftmkwara  staff  33812 Aug 22 11:01 waiting
+-rw-rw-r--@ 1 giftmkwara  staff   2284 Jul 30  2017 waiting.c

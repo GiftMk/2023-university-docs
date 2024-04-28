@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Application</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Importing React, React DOM and Babel from unpkg -->
+      <script
+        crossorigin
+        src="https://unpkg.com/react@18.2.0/umd/react.development.js"
+      ></script>
+      <script
+        crossorigin
+        src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"
+      ></script>
+      <script
+        type="application/javascript"
+        src="https://unpkg.com/babel-standalone@6.26.0/babel.js"
+      ></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script type="text/babel">
+        const rootElement = document.getElementById("root");
+
+        const UserList = () => {
+          const [users, setUsers] = React.useState([]);
+          const [username, setUsername] = React.useState("");
+
+          React.useEffect(() => {
+            const getUsers = () => {
+              axios.get("http://localhost:3000/api/users").then(
+                (response) => {
+                  console.log(response.data);
+                  setUsers(response.data);
+                },
+                (error) => {
+                  console.log(error);
+                }
+              );
+            };
+            getUsers();
+          }, []);
+
+          const addUser = () => {
+            if (username === "") {
+              alert("Please enter a username!");
+            } else {
+              axios.post("http://localhost:3000/api/users", {
+                username: username,
+              });
+            }
+          };
+
+          const updateUsernameState = (event) => {
+            setUsername(event.target.value);
+          };
+
+          const deleteUser = (user) => {
+            axios
+              .delete("http://localhost:3000/api/users" + user.user_id)
+              .then((response) => {
+                setUsers(users.filter((u) => u.user_id != user.user_id));
+              });
+          };
+
+          const listUsers = () => {
+            return users.map((item) => (
+              <li key={item.user_id}>
+                <p>
+                  {item.username}
+                  <button onClick={() => deleteUser(item)}>Delete</button>
+                </p>
+              </li>
+            ));
+          };
+
+          return (
+            <div>
+              <h1>Users</h1>
+              <ul>{listUsers()}</ul>
+              <h2>Add a new user:</h2>
+              <form onSubmit={addUser}>
+                <input
+                  type="text"
+                  value={username}
+                  onChange={updateUsernameState}
+                />
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+          );
+        };
+
+        function App() {
+          return (
+            <div>
+              <UserList />
+            </div>
+          );
+        }
+
+        ReactDOM.render(<App />, rootElement);
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="uc.seng301.cardbattler.asg3.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-05-11T08:15:30" hostname="Gifts-MacBook-Air.local" time="0.008">
+  <properties/>
+  <testcase name="appHasAGreeting()" classname="uc.seng301.cardbattler.asg3.AppTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

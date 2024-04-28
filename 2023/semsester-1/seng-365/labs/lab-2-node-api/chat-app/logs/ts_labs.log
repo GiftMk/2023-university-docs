@@ -1,0 +1,64 @@
+2023-05-11 22:41:23:4123 [31merror[39m: [31mUnable to connect to MySQL.[39m
+2023-05-11 22:42:49:4249 [31merror[39m: [31mUnable to connect to MySQL.[39m
+2023-05-11 22:43:11:4311 [31merror[39m: [31mUnable to connect to MySQL.[39m
+2023-05-11 22:43:44:4344 [31merror[39m: [31mUnable to connect to MySQL.[39m
+2023-05-11 22:44:14:4414 [32minfo[39m: [32mSuccessfully connected to database[39m
+2023-05-11 22:44:14:4414 [32minfo[39m: [32mListening on port: 3000[39m
+2023-05-11 22:45:33:4533 [35mhttp[39m: [35mGET all users[39m
+2023-05-11 22:45:34:4534 [32minfo[39m: [32mGetting all users from the database[39m
+2023-05-11 22:54:59:5459 [35mhttp[39m: [35mGET single user id: 1[39m
+2023-05-11 22:54:59:5459 [32minfo[39m: [32mGetting user 1 from the database[39m
+2023-05-11 22:55:01:551 [35mhttp[39m: [35mGET single user id: 1[39m
+2023-05-11 22:55:01:551 [32minfo[39m: [32mGetting user 1 from the database[39m
+2023-05-11 22:55:02:552 [35mhttp[39m: [35mGET all users[39m
+2023-05-11 22:55:02:552 [32minfo[39m: [32mGetting all users from the database[39m
+2023-05-11 22:55:04:554 [35mhttp[39m: [35mGET all users[39m
+2023-05-11 22:55:04:554 [32minfo[39m: [32mGetting all users from the database[39m
+2023-05-11 22:55:30:5530 [35mhttp[39m: [35mGET all users[39m
+2023-05-11 22:55:30:5530 [32minfo[39m: [32mGetting all users from the database[39m
+2023-05-11 22:55:46:5546 [35mhttp[39m: [35mGET single user id: 1[39m
+2023-05-11 22:55:46:5546 [32minfo[39m: [32mGetting user 1 from the database[39m
+2023-05-11 22:55:55:5555 [35mhttp[39m: [35mGET all users[39m
+2023-05-11 22:55:55:5555 [32minfo[39m: [32mGetting all users from the database[39m
+2023-05-11 22:56:43:5643 [35mhttp[39m: [35mGET all users[39m
+2023-05-11 22:56:43:5643 [32minfo[39m: [32mGetting all users from the database[39m
+2023-05-11 22:56:44:5644 [35mhttp[39m: [35mGET single user id: 1[39m
+2023-05-11 22:56:44:5644 [32minfo[39m: [32mGetting user 1 from the database[39m
+2023-05-11 22:56:48:5648 [35mhttp[39m: [35mGET all users[39m
+2023-05-11 22:56:48:5648 [32minfo[39m: [32mGetting all users from the database[39m
+2023-05-11 22:56:49:5649 [35mhttp[39m: [35mGET single user id: 2[39m
+2023-05-11 22:56:49:5649 [32minfo[39m: [32mGetting user 2 from the database[39m
+2023-05-11 22:56:50:5650 [35mhttp[39m: [35mGET all users[39m
+2023-05-11 22:56:50:5650 [32minfo[39m: [32mGetting all users from the database[39m
+2023-05-11 22:56:51:5651 [35mhttp[39m: [35mGET single user id: 3[39m
+2023-05-11 22:56:51:5651 [32minfo[39m: [32mGetting user 3 from the database[39m
+2023-05-11 22:56:52:5652 [35mhttp[39m: [35mGET all users[39m
+2023-05-11 22:56:52:5652 [32minfo[39m: [32mGetting all users from the database[39m
+2023-05-11 22:56:53:5653 [35mhttp[39m: [35mGET single user id: 4[39m
+2023-05-11 22:56:53:5653 [32minfo[39m: [32mGetting user 4 from the database[39m
+2023-05-11 22:56:54:5654 [35mhttp[39m: [35mGET all users[39m
+2023-05-11 22:56:54:5654 [32minfo[39m: [32mGetting all users from the database[39m
+2023-05-11 22:56:55:5655 [35mhttp[39m: [35mGET single user id: 5[39m
+2023-05-11 22:56:55:5655 [32minfo[39m: [32mGetting user 5 from the database[39m
+2023-05-11 22:56:56:5656 [35mhttp[39m: [35mGET all users[39m
+2023-05-11 22:56:56:5656 [32minfo[39m: [32mGetting all users from the database[39m
+2023-05-12 13:42:41:4241 [32minfo[39m: [32mSuccessfully connected to database[39m
+2023-05-12 13:42:41:4241 [32minfo[39m: [32mListening on port: 3000[39m
+2023-05-12 13:46:09:469 [35mhttp[39m: [35mGET all users[39m
+2023-05-12 13:46:09:469 [32minfo[39m: [32mGetting all users from the database[39m
+2023-05-12 13:46:20:4620 [35mhttp[39m: [35mGET single user id: 1[39m
+2023-05-12 13:46:20:4620 [32minfo[39m: [32mGetting user 1 from the database[39m
+2023-05-12 13:46:24:4624 [35mhttp[39m: [35mGET all users[39m
+2023-05-12 13:46:24:4624 [32minfo[39m: [32mGetting all users from the database[39m
+2023-05-12 13:49:32:4932 [35mhttp[39m: [35mGET single user id: 1[39m
+2023-05-12 13:49:32:4932 [32minfo[39m: [32mGetting user 1 from the database[39m
+2023-05-12 13:50:21:5021 [35mhttp[39m: [35mGET single user id: 1[39m
+2023-05-12 13:50:21:5021 [32minfo[39m: [32mGetting user 1 from the database[39m
+2023-05-12 13:50:27:5027 [35mhttp[39m: [35mGET single user id: 1[39m
+2023-05-12 13:50:27:5027 [32minfo[39m: [32mGetting user 1 from the database[39m
+2023-05-12 13:50:27:5027 [35mhttp[39m: [35mGET single user id: 1[39m
+2023-05-12 13:50:27:5027 [32minfo[39m: [32mGetting user 1 from the database[39m
+2023-05-12 13:51:58:5158 [35mhttp[39m: [35mGET single user id: 1[39m
+2023-05-12 13:51:58:5158 [32minfo[39m: [32mGetting user 1 from the database[39m
+2023-05-12 13:52:15:5215 [35mhttp[39m: [35mGET single user id: 1[39m
+2023-05-12 13:52:15:5215 [32minfo[39m: [32mGetting user 1 from the database[39m

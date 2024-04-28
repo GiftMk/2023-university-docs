@@ -1,0 +1,2358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0057)https://cseweb.ucsd.edu/~jmcauley/datasets.html#pinterest -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Recommender Systems Datasets</title>
+    <meta name="author" content="Julian McAuley">
+    
+    <script type="text/javascript" async="" src="./Recommender Systems Datasets_files/dc.js"></script><script type="text/javascript" language="javascript" src="./Recommender Systems Datasets_files/jquery-1.4.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Recommender Systems Datasets_files/style.css">
+  </head>
+<body>
+
+<div id="left_column">
+</div>
+
+<div id="main">
+<!-- <div id="header"> -->
+  <h1>Recommender Systems and Personalization Datasets</h1>
+
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a></b>, UCSD</p>
+
+  <h2>Description</h2>
+
+  <p>This page contains a collection of datasets that have been collected for research by our lab. Datasets contain the following features:</p>
+
+  <ul>
+    <li>user/item interactions</li>
+    <li>star ratings</li>
+    <li>timestamps</li>
+    <li>product reviews</li>
+    <li>social networks</li>
+    <li>item-to-item relationships (e.g. copurchases, compatibility)</li>
+    <li>product images</li>
+    <li>price, brand, and category information</li>
+    <li>GPS data</li>
+    <li>heart-rate sequences</li>
+    <li>other metadata</li>
+  </ul>
+
+  <p>Please cite the appropriate reference if you use any of the datasets below.</p>
+
+  <p>Datasets are in (loose) json format unless specified otherwise, meaning they can be treated as python dictionary objects. A simple script to read json-formatted data is as follows:</p>
+
+  <p>
+    </p><div class="code">def parse(path):
+  g = gzip.open(path, 'r')
+  for l in g:
+    yield eval(l)</div>
+  <p></p>
+
+
+  <h2>Directory by Dataset</h2>
+
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#twitch">Twitch</a></b> live-streaming interactions</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#interview">NPR</a></b> interview dialog data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#thisamericanlife">This American Life</a></b> podcast transcripts</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#foodcom">Recipes</a></b> and interactions from food.com</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#endomondo">EndoMondo</a></b> fitness tracking data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews">Amazon</a></b> product reviews and metadata</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_qa">Amazon</a></b> question/answer data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#market_bias">Amazon</a></b> marketing bias data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#google_local">Google Local</a></b> business reviews and metadata</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#google_restaurants">Google Restaurants</a></b> restaurant reviews and metadata</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#steam_data">Steam</a></b> video game reviews and bundles</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#goodreads">Goodreads</a></b> book reviews</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#spoilers">Goodreads</a></b> spoilers</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#pinterest">Pinterest</a></b> fashion compatibility data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#clothing_fit">ModCloth</a></b> clothing fit feedback</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#market_bias">ModCloth</a></b> marketing bias data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#clothing_fit">RentTheRunway</a></b> clothing fit feedback</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#bartering_data">Tradesy</a></b> bartering data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#bartering_data">RateBeer</a></b> bartering data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#bartering_data">Gameswap</a></b> bartering data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#behance">Behance</a></b> community art reviews and image features</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#social_data">Librarything</a></b> reviews and social data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#social_data">Epinions</a></b> reviews and social data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#dogwhistle">Cant understanding data</a></b></p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#dancedance">Dance Dance Revolution</a></b> step charts</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#dancedance">NES</a></b> song data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#multi_aspect">BeerAdvocate</a></b> multi-aspect beer reviews</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#multi_aspect">RateBeer</a></b> multi-aspect beer reviews</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#socialcircles">Facebook</a></b> social circles data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#socialcircles">Twitter</a></b> social circles data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#socialcircles">Google+</a></b> social circles data</p>
+  <p><b><a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#reddit">Reddit</a></b> submission popularity and metadata</p>
+
+
+  <h2>Directory by Metadata Type</h2>
+
+  <p>The datasets below can be roughly organized in terms of the types of metadata they contain:</p>
+
+  <p><b>Review text:</b> see <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews">Amazon</a>, <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#multi_aspect">BeerAdvocate, RateBeer</a>, <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#google_local">Google Local</a>, <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#google_restaurants">Google Restaurants</a></p>
+  <p><b>Image data:</b> <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews">Amazon</a>, <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#behance">Behance</a>, <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#pinterest">Pinterest</a>, <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#google_restaurants">Google Restaurants</a></p>
+  <p><b>Item-to-item relationships:</b> <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews">Amazon</a></p>
+  <p><b>Q/A data:</b> <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_qa">Amazon Q/A</a></p>
+  <p><b>Geographical data:</b> <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#google_local">Google Local</a>, <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#google_restaurants">Google Restaurants</a>, <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#endomondo">EndoMondo</a></p>
+  <p><b>Heart-Rate data:</b> <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#endomondo">EndoMondo</a></p>
+  <p><b>Bundle data:</b> <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#steam_data">Steam</a></p>
+  <p><b>Peer-to-peer trades:</b> <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#bartering_data">Tradesy, RateBeer, Gameswap</a></p>
+  <p><b>Social connections:</b> <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#social_data">Librarything, Epinions</a></p>
+  <p><b>Fit feedback:</b> <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#clothing_fit">Modcloth, Renttherunway</a></p>
+  <p><b>Multple aspects:</b> <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#multi_aspect">BeerAdvocate, RateBeer</a></p>
+
+
+  <br>
+  <hr>
+
+
+
+<a name="twitch"></a>
+
+<script type="application/ld+json">
+    {
+      "@context":"http://schema.org/",
+      "@type":"Dataset",
+      "name":"Twitch dataset",
+      "description":"This is a dataset of users consuming streaming content on Twitch. We retrieved all streamers, and all users connected in their respective chats, every 10 minutes during 43 days.",
+      "url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#twitch",
+      "sameAs":"",
+      "version":1,
+      "fileFormat":"csv",
+      "creator":
+      {
+        "@type":"Organization","name":"UCSD CSE Research Project",
+        "url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+      },
+      "citation": "Rappaz et al. (2021). Recommendation on Live-Streaming Platforms: Dynamic Availability and Repeat Consumption. RecSys."
+  }
+</script>
+
+  <h1>Twitch</h1>
+
+  <h2>Description</h2>
+
+  <p>This is a dataset of users consuming streaming content on Twitch. We retrieved all streamers, and all users connected in their respective chats, every 10 minutes during 43 days.</p>
+
+  <h2>Basic statistics</h2>
+
+  <table class="code-table">
+    <tbody><tr> <td></td> <td><b>100k</b></td> <td><b>full</b></td></tr>
+    <tr> <td>Users:</td> <td>100k</td> <td>15.5M</td></tr>
+    <tr> <td>Streamers (items):</td> <td>162.6k</td> <td>465k</td></tr>
+    <tr> <td>Interactions:</td> <td>3M</td> <td>124M</td></tr>
+    <tr> <td>Time steps:</td> <td>6148</td> <td>6148</td></tr>
+  </tbody></table>
+
+  <h2>Metadata</h2>
+  Start and stop times are provided as integers and represent periods of 10 minutes. Stream ID could be used to retrieve a single broadcast segment from a streamer (not used in our work).
+  <ul>
+    <li>User ID (anonymized)</li>
+    <li>Stream ID</li>
+    <li>Streamer username</li>
+    <li>Time start</li>
+    <li>Time stop</li>
+  </ul>
+
+  <h2>Example</h2>
+  <p>
+  </p><div class="code">
+    1,34347669376,grimnax,5415,<wbr>5419
+    1,34391109664,jtgtv,5869,5870
+    1,34395247264,towshun,5898,<wbr>5899
+    1,34405646144,mithrain,6024,<wbr>6025
+    2,33848559952,chfhdtpgus1,206,<wbr>207
+    2,33881429664,sal_gu,519,524
+    2,33921292016,chfhdtpgus1,922,<wbr>924
+  </div>
+  <p></p>
+
+  <h2>Download link</h2>
+
+  <p>See our <a href="https://www.google.com/url?q=https://drive.google.com/drive/folders/1BD8m7a8m7onaifZay05yYjaLxyVV40si?usp%3Dsharing&amp;source=gmail-html&amp;ust=1629428377164000&amp;usg=AFQjCNFXimN1hHftvhgIu5iKUTZiOsep8A" target="_blank" rel="noreferrer">Google Drive folder</a> containing all Twitch files. The file <i>full_a.csv.gz</i> contains the full dataset while <i>100k.csv</i> is a subset of 100k users for benchmark purposes. The code is available in our <a href="https://www.google.com/url?q=https://github.com/JRappaz/liverec&amp;source=gmail-html&amp;ust=1629428377164000&amp;usg=AFQjCNFEGBZtyMwP3RJu-w8IWbubR8MAjw" target="_blank" rel="noreferrer">Github repository</a>.</p>
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+    <p>
+      <b>Recommendation on Live-Streaming Platforms: Dynamic Availability and Repeat Consumption</b><br>
+      Jérémie Rappaz, Julian McAuley and Karl Aberer<br>
+      <em>RecSys</em>, 2021<br>
+    </p>
+
+  <br>
+  <hr>
+
+
+
+<a name="interview"></a>
+
+<script type="application/ld+json">
+    {
+      "@context":"http://schema.org/",
+      "@type":"Dataset",
+      "name":"INTERVIEW NPR Media Dialog data",
+      "description":"This is a collection of around 104K interview transcripts and 98K news article headlines from npr.org. Data includes episode identifiers and dates, full utterance transcripts, and article headlines.\n\nMetadata includes\n\n* Speaker Names\n\n* Episode Titles\n\n* Utterance Text\n\n* Various derived sequences\n\nBasic Statistics:\n\n* Speakers: 185K\n\n* Episodes: 106K\n\n* Utterances: 3.20M",
+      "url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#interview",
+      "sameAs":"",
+      "version":1,
+      "fileFormat":"csv",
+      "creator":
+      {
+        "@type":"Organization","name":"UCSD CSE Research Project",
+        "url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+      },
+      "citation": "Majumder et al. (2020). Interview: Large-scale Modeling of Media Dialog with Discourse Patterns and Knowledge Grounding. EMNLP. https://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp20b.pdf"
+  }
+</script>
+
+  <h1>Interview: NPR Media Dialog Data</h1>
+
+  <h2>Description</h2>
+
+  <p>This dataset contains interview transcripts from <a href="https://www.npr.org/">National Public Radio (NPR)</a>. Data includes full interview transcripts and news article headlines.</p>
+
+  <h2>Basic statistics</h2>
+
+  <table class="code-table">
+    <tbody><tr> <td></td> <td><b>NPR</b></td></tr>
+    <tr> <td>Speakers:</td> <td>185K</td></tr>
+    <tr> <td>Episodes (Interviews):</td> <td>106K</td></tr>
+    <tr> <td>Utterances:</td> <td>3.20M</td></tr>
+    <tr> <td>Words:</td> <td>126.7M</td></tr>
+  </tbody></table>
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>Episode Date and Title</li>
+    <li>Speaker Names</li>
+    <li>Speaker Utterances</li>
+    <li>News Article Headlines</li>
+  </ul>
+
+  <h2>Example</h2>
+  <p>
+  </p><div class="code">
+episode:        79679
+program:        Talk of the Nation
+title:          Forecasting the Future of the Internet
+date:           2006-05-26
+episode_order:  48
+speaker:        Professor LARRY PETERSON (Princeton University)
+utterance:      And this is almost like the neutrality aspect of the issue, that there are places you just can't get to and the universal connectivity of the original Internet is deteriorating. Because of a lack of security built into the Internet your only recourse is to throw up all sorts of protections that are extremely suspicious of every bit of traffic that happens to fly by.
+  </div>
+  <p></p>
+
+  <h2>Download link</h2>
+
+  <p>See the <a href="https://www.kaggle.com/shuyangli94/interview-npr-media-dialog-transcripts?rvi=1">Interview Dataset Page</a> for download information.</p>
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+    <p>
+      <b>Interview: Large-scale Modeling of Media Dialog with Discourse Patterns and Knowledge Grounding</b><br>
+      Bodhisattwa Prasad Majumder*, Shuyang Li*, Jianmo Ni, Julian McAuley<br>
+      <em>EMNLP</em>, 2020<br>
+      <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp20b.pdf">pdf</a>
+    </p>
+
+  <br>
+  <hr>
+
+<a name="thisamericanlife"></a>
+
+<script type="application/ld+json">
+    {
+      "@context":"http://schema.org/",
+      "@type":"Dataset",
+      "name":"This American Life Podcast Transcripts",
+      "description":"This is a collection of transcripts for 663 podcasts from the This American Life radio program from 1995 to 2020, covering 637 hours of audio. Data includes episode acts, utterance lengths, speaker names, full transcripts, and episode audio.\n\nMetadata includes\n\n* Speaker Names\n\n* Episode Titles\n\n* Utterance Text\n\n* Episode Audio\n\nBasic Statistics:\n\n* Speakers: 6,608\n\n* Episodes: 663\n\n* Utterances: 163,808",
+      "url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#thisamericanlife",
+      "sameAs":"",
+      "version":1,
+      "fileFormat":"json",
+      "creator":
+      {
+        "@type":"Organization","name":"UCSD CSE Research Project",
+        "url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+      },
+      "citation": "Mao et al. (2020). Speech Recognition and Multi-Speaker Diarization of Long Conversations. INTERSPEECH. https://cseweb.ucsd.edu/~jmcauley/pdfs/interspeech20.pdf"
+  }
+</script>
+
+  <h1>This American Life Podcast Transcripts</h1>
+
+  <h2>Description</h2>
+
+  <p>This dataset contains program transcripts from <a href="https://www.thisamericanlife.org/">This American Life</a>. Data includes full program transcripts and associated audio.</p>
+
+  <h2>Basic statistics</h2>
+
+  <table class="code-table">
+    <tbody><tr> <td></td> <td><b>This American Life</b></td></tr>
+    <tr> <td>Speakers:</td> <td>6,608</td></tr>
+    <tr> <td>Episodes:</td> <td>663</td></tr>
+    <tr> <td>Utterances:</td> <td>163,808</td></tr>
+    <tr> <td>Words:</td> <td>7,390,793</td></tr>
+  </tbody></table>
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>Episode Act</li>
+    <li>Speaker Names</li>
+    <li>Speaker Utterances</li>
+    <li>Utterance Lengths</li>
+    <li>Episode Audio</li>
+  </ul>
+
+  <h2>Example</h2>
+  <p>
+  </p><div class="code">
+episode:          ep-1
+act:              prologue
+utterance_start:  39.96
+utterance_end:    54.89
+duration:         14.93
+speaker:          ira glass
+utterance:        Well, one great thing about starting a new show is utter anonymity. Nobody really knows what to expect from you. This interviewee did not know us from Adam.
+  </div>
+  <p></p>
+
+  <h2>Download link</h2>
+
+  <p>See the <a href="https://www.kaggle.com/shuyangli94/this-american-life-podcast-transcriptsalignments">This American Life Dataset Page</a> for download information.</p>
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+    <p>
+      <b>Speech Recognition and Multi-Speaker Diarization of Long Conversations</b><br>
+      Huanru Henry Mao, Shuyang Li, Julian McAuley, Garrison W. Cottrell<br>
+      <em>INTERSPEECH</em>, 2020<br>
+      <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/interspeech20.pdf">pdf</a>
+    </p>
+
+  <br>
+  <hr>
+
+
+  <a name="foodcom"></a>
+
+<script type="application/ld+json">
+    {
+      "@context":"http://schema.org/",
+      "@type":"Dataset",
+      "name":"Food.com recipe data",
+      "description":"This is a collection of around 180,000 recipes and 700,000 reviews from users of Food.com. Data includes cooking recipes and review texts.\n\nMetadata includes\n\n* User Identifier\n\n* Nutrition Information\n\n* Expected Cooking Time\n\n* Recipe Type Tags\n\n* Various derived sequences\n\nBasic Statistics:\n\n* Users: 226,570\n\n* Recipes: 231,637\n\n* Reviews: 1,132,367",
+      "url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#foodcom",
+      "sameAs":"",
+      "version":1,
+      "fileFormat":"csv",
+      "creator":
+      {
+        "@type":"Organization","name":"UCSD CSE Research Project",
+        "url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+      },
+      "citation": "Majumder et al. (2019). Generating Personalized Recipes from Historical User Preferences. EMNLP. https://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp19c.pdf"
+  }
+</script>
+
+  <h1>Food.com Recipe &amp; Review Data</h1>
+
+  <h2>Description</h2>
+
+  <p>These datasets contain recipe details and reviews from <a href="https://cseweb.ucsd.edu/~jmcauley/www.food.com">Food.com</a> (formerly GeniusKitchen). Data includes cooking recipes and review texts.</p>
+
+  <h2>Basic statistics</h2>
+
+  <table class="code-table">
+    <tbody><tr> <td></td> <td><b>Food.com</b></td></tr>
+    <tr> <td>Number of recipes:</td> <td>231,637</td></tr>
+    <tr> <td>Number of users:</td> <td>226,570</td></tr>
+    <tr> <td>Number of reviews:</td> <td>1,132,367</td></tr>
+  </tbody></table>
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>Ratings and Reviews</li>
+    <li>Recipe Name, Description, Ingredients, and Directions</li>
+    <li>Recipe Categories (Tags)</li>
+    <li>Recipe Nutrition Information</li>
+  </ul>
+
+  <h2>Example</h2>
+
+  <p> Recipe:</p>
+
+  <p>
+  </p><div class="code">
+name:               beer mac n cheese soup
+id:                 499490
+minutes:            45
+contributor_id:     560491
+submitted:          2013-04-27
+tags:               60-minutes-or-less
+                    time-to-make
+                    preparation
+nutrition:          678.8
+                    70.0
+                    20.0
+                    46.0
+                    61.0
+                    134.0
+                    11.0
+n_steps:            7
+steps:              cook the bacon in a pan over medium heat and set aside on paper towels to drain , reserving 2 tablespoons of the grease in the pan
+                    add the onion , carrot , celery and jalapeno and cook until tender , about 10-15 minutes
+                    add the garlic and cook until fragrant , about a minute
+                    mix in the flour and let it cook for 2-3 minutes
+                    add the broth , beer , nutmeg , bacon and macaroni and let cook until the macaroni is al-dente , about 7-8 minutes
+                    add the cream , mustard , worcestershire sauce and cheese and cook until the cheese has melted without bringing it back to a boil
+                    season with cayenne , salt and pepper to taste
+description:        all of the flavors of mac n' cheese in the form of a hot bowl of soup!  submitted by kevin lynch
+ingredients:        bacon
+                    onion
+                    carrots
+                    celery
+                    jalapeno pepper
+                    garlic cloves
+                    flour
+                    chicken broth
+                    beer
+                    nutmeg
+                    elbow macaroni
+                    heavy cream
+                    dijon mustard
+                    worcestershire sauce
+                    cheddar cheese
+                    cayenne
+                    salt and pepper
+n_ingredients:      17
+  </div>
+  <p></p>
+
+  <p> Review:</p>
+
+  <p>
+  </p><div class="code">
+user_id:       8937
+recipe_id:     44394
+date:          2002-12-01
+rating:        4
+review:        This worked very well and is EASY.  I used not quite a whole package (10oz) of white chips.  Great!
+  </div>
+  <p></p>
+
+  <h2>Download link</h2>
+
+  <p>See the <a href="https://www.kaggle.com/shuyangli94/food-com-recipes-and-user-interactions">Food.com Dataset Page</a> for download information.</p>
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+    <p>
+      <b>Generating Personalized Recipes from Historical User Preferences</b><br>
+      Bodhisattwa Prasad Majumder*, Shuyang Li*, Jianmo Ni, Julian McAuley<br>
+      <em>EMNLP</em>, 2019<br>
+      <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp19c.pdf">pdf</a>
+    </p>
+
+  <br>
+  <hr>
+
+
+<a name="endomondo"></a>
+
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"EndoMondo workout data",
+    	"description":"This is a collection of around 250,000 workout logs from users of EndoMondo. Data includes multiple sources of sequential sensor data such as heart rate logs, speed, GPS, as well as sport type, gender and weather conditions.\n\nMetadata includes\n\n* User Identifier\n\n* Gender\n\n* Sport type\n\n* Latitude/Longitude/Altitude sequences (with timestamps)\n\n* Heart rates\n\n* Various derived sequences\n\nBasic Statistics:\n\n* Users: 1,104\n\n* Workouts: 253,020",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#endomondo",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "Ni et al. (2019). Modeling heart rate and activity data for personalized fitness recommendation. WWW. https://cseweb.ucsd.edu/~jmcauley/pdfs/www19.pdf"
+	}
+</script>
+
+  <h1>EndoMondo Fitness Tracking Data</h1>
+
+  <h2>Description</h2>
+
+  <p>This is a collection of workout logs from users of <a href="https://www.endomondo.com/">EndoMondo</a>. Data includes multiple sources of sequential sensor data such as heart rate logs, speed, GPS, as well as sport type, gender and weather conditions.</p>
+
+  <h2>Basic statistics</h2>
+
+<table class="code-table">
+  <tbody><tr> <td>Users:</td> <td>1,104</td> </tr>
+  <tr> <td>Workouts:</td> <td>253,020</td> </tr>
+</tbody></table>
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>User Identifier</li>
+    <li>Gender</li>
+    <li>Sport type</li>
+    <li>Latitude/Longitude/Altitude sequences (with timestamps)</li>
+    <li>Heart rates</li>
+    <li>Various derived sequences</li>
+  </ul>
+
+  <h2>Example</h2>
+
+  <p>
+    </p><div class="code">userId: 10921915
+gender: male
+sport: bike
+id: 396826535
+longitude: [24.64977040886879, 24.65014273300767, 24.650910682976246, 24.650668865069747, 24.649145286530256, ...]
+latitude: [60.173348765820265, 60.173239801079035, 60.17298021353781, 60.172477969899774, 60.17186114564538, ...]
+altitude: [-1.8044666444624418, -1.8190453555595787, -1.8190453555595787, -1.8511185199732794, -1.871528715509271, ...]
+timestamp: [1408898746, 1408898754, 1408898765, 1408898778, 1408898794, ...]
+time_elapsed: [-0.12256752559145224, -0.12221090169596584, -0.12172054383967204, -0.12114103000950663, -0.12042778221853381, ...]
+heart_rate: [-8.197369036801112, -5.867841701016304, -3.961864789919643, -4.173640002263717, -3.961864789919643, ...]
+derived_speed: [-7.0829444390064396, -2.8061928357004815, -0.3976286593020398, -0.7571073884764162, 2.6415189187026646, ...]
+distance: [-4.372303649217691, -2.374952819539426, -0.07926348591212737, 0.4284751220389811, 4.710835498111755, ...]
+tar_heart_rate: [100, 111, 120, 119, 120, ...]
+tar_derived_speed: [0, 10.751376415573548, 16.806294372816662, 15.902596545765366, 24.446443398153843, ...]
+since_begin: [1378478.8892184314, 1378478.8892184314, 1378478.8892184314, 1378478.8892184314, 1378478.8892184314, ...]
+since_last: [2158.84607810351, 2158.84607810351, 2158.84607810351, 2158.84607810351, 2158.84607810351, ...]
+</div>
+  <p></p>
+
+  <h2>Download link</h2>
+
+  <p>See the <a href="https://sites.google.com/eng.ucsd.edu/fitrec-project/home">FitRec Dataset Page</a> for download information.</p>
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+    <p>
+      <b>Modeling heart rate and activity data for personalized fitness recommendation</b><br>
+      Jianmo Ni, Larry Muhlstein, Julian McAuley<br>
+      <em>WWW</em>, 2019<br>
+      <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/www19.pdf">pdf</a>
+    </p>
+
+  <br>
+  <hr>
+
+  <a name="amazon_reviews"></a>
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Amazon Product Reviews",
+    	"description":"This is a large crawl of product reviews from Amazon. This dataset contains 82.83 million unique reviews, from around 20 million users.\n\nMetadata includes\n\n* reviews and ratings\n\n* item-to-item relationships (e.g. people who bought X also bought Y)\n\n* timestamps\n\n* helpfulness votes\n\n* product image (and CNN features)\n\n* price\n\n* category\n\n* salesRank\n\nBasic Statistics:\n\n* Ratings: 82.83 million\n\n* Users: 20.98 million\n\n* Items: 9.35 million\n\n* Timespan: May 1996 - July 2014",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "He and McAuley (2016). Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering. WWW. https://cseweb.ucsd.edu/~jmcauley/pdfs/www16a.pdf"
+	}
+</script>
+
+  <h1>Amazon Product Reviews</h1>
+
+  <h2>Description</h2>
+
+  <p>This is a large crawl of product reviews from Amazon. This dataset contains 82.83 million unique reviews, from around 20 million users.</p>
+
+  <h2>Basic statistics</h2>
+
+<table class="code-table">
+  <tbody><tr> <td>Ratings:</td> <td>82.83 million</td> </tr>
+  <tr> <td>Users:</td> <td>20.98 million</td> </tr>
+  <tr> <td>Items:</td> <td>9.35 million</td> </tr>
+  <tr> <td>Timespan:</td> <td>May 1996 - July 2014</td> </tr>
+</tbody></table>
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>reviews and ratings</li>
+    <li>item-to-item relationships (e.g. "people who bought X also bought Y")</li>
+    <li>timestamps</li>
+    <li>helpfulness votes</li>
+    <li>product image (and CNN features)</li>
+    <li>price</li>
+    <li>category</li>
+    <li>salesRank</li>
+  </ul>
+
+  <h2>Example</h2>
+
+  <p>
+    </p><div class="code">{
+  "reviewerID": "A2SUAM1J3GNN3B",
+  "asin": "0000013714",
+  "reviewerName": "J. McDonald",
+  "helpful": [2, 3],
+  "reviewText": "I bought this for my husband who plays the piano.  He is having a wonderful time playing these old hymns.  The music  is at times hard to read because we think the book was published for singing from more than playing from.  Great purchase though!",
+  "overall": 5.0,
+  "summary": "Heavenly Highway Hymns",
+  "unixReviewTime": 1252800000,
+  "reviewTime": "09 13, 2009"
+}</div>
+  <p></p>
+
+  <h2>Download link</h2>
+
+  <!-- <p>See the <a href="https://nijianmo.github.io/amazon/index.html">Amazon Dataset Page</a> for download information.</p> -->
+  <p>See the <a href="https://cseweb.ucsd.edu/~jmcauley/datasets/amazon_v2/">Amazon Dataset Page</a> for download information.</p>
+
+  <p>The 2014 version of this dataset is <a href="https://cseweb.ucsd.edu/~jmcauley/datasets/amazon/links.html">also available</a>.</p>
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+    <p>
+      <b>Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering</b><br>
+      R. He, J. McAuley<br>
+      <em>WWW</em>, 2016<br>
+      <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/www16a.pdf">pdf</a>
+    </p>
+
+    <p>
+      <b>Image-based recommendations on styles and substitutes</b><br>
+      J. McAuley, C. Targett, J. Shi, A. van den Hengel<br>
+      <em>SIGIR</em>, 2015<br>
+      <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/sigir15.pdf">pdf</a>
+    </p>
+
+  <br>
+  <hr>
+
+  <a name="amazon_qa"></a>
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Amazon Question and Answer Data",
+    	"description":"These datasets contain 1.48 million question and answer pairs about products from Amazon.\n\nMetadata includes\n\n* question and answer text\n\n* is the question binary (yes/no), and if so does it have a yes/no answer?\n\n* timestamps\n\n* product ID (to reference the review dataset)\n\nBasic Statistics:\n\n* Questions: 1.48 million\n\n* Answers: 4,019,744\n\n* Labeled yes/no questions: 309,419\n\n* Number of unique products with questions: 191,185",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_qa",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "Wan and McAuley (2016). Modeling ambiguity, subjectivity, and diverging viewpoints in opinion question answering systems. ICDM. https://cseweb.ucsd.edu/~jmcauley/pdfs/icdm16c.pdf"
+	}
+</script>
+
+  <h1>Amazon Question and Answer Data</h1>
+
+  <h2>Description</h2>
+
+  <p>These datasets contain questions and answers about products from the Amazon dataset above.</p>
+
+  <h2>Basic statistics</h2>
+
+<table class="code-table">
+  <tbody><tr> <td>Questions:</td> <td>1.48 million</td> </tr>
+  <tr> <td>Answers:</td> <td>4,019,744</td> </tr>
+  <tr> <td>Labeled yes/no questions:</td> <td>309,419</td> </tr>
+  <tr> <td>Number of unique products with questions:</td> <td>191,185</td> </tr>
+</tbody></table>
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>question and answer text</li>
+    <li>is the question binary (yes/no), and if so does it have a yes/no answer?</li>
+    <li>timestamps</li>
+    <li>product ID (to reference the review dataset)</li>
+  </ul>
+
+  <h2>Example</h2>
+
+  <p>
+  </p><div class="code">{
+  "asin": "B000050B6Z",
+  "questionType": "yes/no",
+  "answerType": "Y",
+  "answerTime": "Aug 8, 2014",
+  "unixTime": 1407481200,
+  "question": "Can you use this unit with GEL shaving cans?",
+  "answer": "Yes. If the can fits in the machine it will despense hot gel lather. I've been using my machine for both , gel and traditional lather for over 10 years."
+}</div>
+  <p></p>
+
+
+  <h2>Download link</h2>
+
+<!--   <p>See the <a href="http://deepx.ucsd.edu/public/jmcauley/qa/">Amazon Q/A Page</a> for download information.</p>
+ -->
+  <p>See the <a href="https://cseweb.ucsd.edu/~jmcauley/datasets/amazon/qa/">Amazon Q/A Page</a> for download information.</p>
+
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+  <p>
+    <b>Modeling ambiguity, subjectivity, and diverging viewpoints in opinion question answering systems</b><br>
+    Mengting Wan, Julian McAuley<br>
+    <em>International Conference on Data Mining (ICDM)</em>, 2016<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/icdm16c.pdf">pdf</a>
+  </p>
+
+  <p>
+    <b>Addressing complex and subjective product-related queries with customer reviews</b><br>
+    Julian McAuley, Alex Yang<br>
+    <em>World Wide Web (WWW)</em>, 2016<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/www16b.pdf">pdf</a>
+  </p>
+
+
+  <br>
+  <hr>
+
+
+
+<a name="market_bias"></a>
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Marketing Bias data",
+    	"description":"These datasets contain attributes about products sold on ModCloth and Amazon which may be sources of bias in recommendations (in particular, attributes about how the products are marketed). Data also includes user/item interactions for recommendation.\n\nMetadata includes\n\n* ratings\n\n* product images\n\n* user identities\n\n* item sizes, user genders",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#market_bias",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "Wan et al. (2020). Addressing Marketing Bias in Product Recommendations. WSDM. https://cseweb.ucsd.edu/~jmcauley/pdfs/wsdm20a.pdf"
+	}
+</script>
+
+    <h1>Marketing Bias data</h1>
+
+  <h2>Description</h2>
+
+  <p>These datasets contain attributes about products sold on ModCloth and Amazon which may be sources of bias in recommendations (in particular, attributes about how the products are marketed). Data also includes user/item interactions for recommendation.</p>
+
+  <h2>Basic statistics</h2>
+
+<table class="code-table">
+  <tbody><tr> <td></td> <td><b>ModCloth</b></td> <td><b>Amazon Electronics</b></td></tr>
+  <tr> <td>Reviews:</td> <td>99,893</td> <td>1,292,954</td> </tr>
+  <tr> <td>Items:</td> <td>1,020</td> <td>9,560</td></tr>
+  <tr> <td>Users:</td> <td>44,783</td> <td>1,157,633</td> </tr>
+  <tr> <td>Bias type:</td> <td>body shape</td> <td>gender</td> <td>
+</td></tr></tbody></table>
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>ratings</li>
+    <li>product images</li>
+    <li>user identities</li>
+    <li>item sizes, user genders</li>
+  </ul>
+
+  <h2>Example (ModCloth)</h2>
+
+  <p>
+  </p><div class="code">item_id,user_id,rating,timestamp,size,fit,user_attr,model_attr,c...<!-- category,brand,year,split -->
+7443,Alex,4,2010-01-21 08:00:00+00:00,,,Small,Small,Dresses,,2012,0
+7443,carolyn.agan,3,2010-01-27 08:00:00+00:00,,,,Small,Dresses,,...
+7443,Robyn,4,2010-01-29 08:00:00+00:00,,,Small,Small,Dresses,,20...
+7443,De,4,2010-02-13 08:00:00+00:00,,,,Small,Dresses,,2012,0
+7443,tasha,4,2010-02-18 08:00:00+00:00,,,Small,Small,Dresses,,20...
+7443,gina.chihos,5,2010-02-25 08:00:00+00:00,,,,Small,Dresses,,2...
+7443,Kim,2,2010-02-26 08:00:00+00:00,,,Small,Small,Dresses,,2012,0
+7443,jess.betcher,5,2010-03-26 07:00:00+00:00,,,,Small,Dresses,,...</div>
+  <p></p>
+
+  <h2>Download links</h2>
+
+  <p>See our <a href="https://github.com/MengtingWan/marketBias">project page</a> for download links.</p> 
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+  <p>
+    <b>Addressing Marketing Bias in Product Recommendations</b><br>
+    Mengting Wan, Jianmo Ni, Rishabh Misra, Julian McAuley<br>
+    <em>WSDM</em>, 2020<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/reviews/wsdm20a.pdf">pdf</a>
+  </p>
+
+  <br><hr>
+
+
+
+    <a name="google_local"></a>
+
+<script type="application/ld+json">
+    {
+      "@context":"http://schema.org/",
+      "@type":"Dataset",
+      "name":"Google Local Data (2021)",
+      "description":"This Dataset contains review information on Google map (ratings, text, images, etc.), business metadata (address, geographical info, descriptions, category information, price, open hours, and MISC info), and links (relative businesses) in the United States. The dataset includes 666.3 million reviews, 113.6 million users and 4.9 million businesses util Sep 2021.",
+      "url":"https://jiachengli1995.github.io/google/index.html",
+      "sameAs":"",
+      "version":1,
+      "fileFormat":"json",
+      "creator":
+      {
+        "@type":"Organization","name":"UCSD CSE Research Project",
+        "url":"https://jiachengli1995.github.io/google/index.html"
+      },
+      "citation": "Jiacheng Li, Jingbo Shang, Julian McAuley. UCTopic: Unsupervised Contrastive Learning for Phrase Representations and Topic Mining. ACL (2022). https://aclanthology.org/2022.acl-long.426.pdf"
+  }
+</script>
+
+    <h1>Google Local Reviews (2021)</h1>
+
+  <h2>Description</h2>
+
+  <p>This dataset contains review information from Google Maps (ratings, text, images, etc.), business metadata (address, geographic info, descriptions, category information, price, open hours, etc.), and links (related businesses) up to Sep 2021 in the United States.</p>
+
+  <h2>Basic statistics</h2>
+
+<table class="code-table">
+    <tbody><tr> <td>Reviews:</td> <td>666,324,103</td> </tr>
+    <tr> <td>Users:</td> <td>113,643,107</td> </tr>
+    <tr> <td>Businesses:</td> <td>4,963,111</td> </tr>
+</tbody></table>
+  <h2>Review</h2>
+
+  <p>
+  </p><div class="code">{
+    'user_id': '101463350189962023774', 
+    'name': 'Jordan Adams', 
+    'time': 1627750414677, 
+    'rating': 5, 
+    'text': 'Cool place, great people, awesome dentist!', 
+    'pics': [
+    {
+      'url': ['https://lh5.googleusercontent.com/p/AF1QipNq2nZC5TH4_M7h5xRAd
+      61hoTgvY1o9lozABguI=w150-h150-k-no-p']
+    }
+    ], 
+    'resp': {
+      'time': 1628455067818, 
+      'text': 'Thank you for your five-star review! -Dr. Blake'
+    }, 
+    'gmap_id': '0x87ec2394c2cd9d2d:0xd1119cfbee0da6f3'
+  }
+  </div>
+  <p></p>
+  <p>
+    </p><ul>
+      <li><tt>user_id</tt> - ID of the reviewer</li>
+      <li><tt>name</tt> - name of the reviwer</li>
+      <li><tt>time</tt> - time of the review (unix time)</li>
+      <li><tt>rating</tt> - rating of the business</li>
+      <li><tt>text</tt> - text of the review</li>
+      <li><tt>pics</tt> - pictures of the review</li>
+      <li><tt>resp</tt> - business response to the review including unix time and text of the response</li>
+      <li><tt>gmap_id</tt> - ID of the business</li>
+    </ul>
+  <p></p>
+
+  <h2>Metadata</h2>
+
+  <p>
+    </p><div class="code">{
+      'name': 'Walgreens Pharmacy', 
+      'address': 'Walgreens Pharmacy, 124 E North St, Kendallville, IN 46755', 
+      'gmap_id': '0x881614ce7c13acbb:0x5c7b18bbf6ec4f7e', 
+      'description': 'Department of the Walgreens chain providing prescription medications &amp; other health-related items.', 
+      'latitude': 41.451859999999996, 
+      'longitude': -85.2666757, 
+      'category': ['Pharmacy'], 
+      'avg_rating': 4.2, 
+      'num_of_reviews': 5, 
+      'price': '$$', 
+      'hours': [['Thursday', '8AM–1:30PM'], ['Friday', '8AM–1:30PM'], ['Saturday', '9AM–1:30PM'], ['Sunday', '10AM–1:30PM'], ['Monday', '8AM–1:30PM'], ['Tuesday', '8AM–1:30PM'], ['Wednesday', '8AM–1:30PM']], 
+      'MISC': {
+        'Service options': ['Curbside pickup', 'Drive-through', 'In-store pickup', 'In-store shopping'], 
+        'Health &amp; safety': ['Mask required', 'Staff wear masks', 'Staff get temperature checks'], 
+        'Accessibility': ['Wheelchair accessible entrance', 'Wheelchair accessible parking lot'], 
+        'Planning': ['Quick visit'], 
+        'Payments': ['Checks', 'Debit cards']
+      }, 
+      'state': 'Closes soon ⋅ 1:30PM ⋅ Reopens 2PM', 
+      'relative_results': ['0x881614cd49e4fa33:0x2d507c24ff4f1c74', '0x8816145bf5141c89:0x535c1d605109f94b', '0x881614cda24cc591:0xca426e3a9b826432', '0x88162894d98b91ef:0xd139b34de70d3e03', '0x881615400b5e57f9:0xc56d17dbe420a67f'], 
+      'url': 'https://www.google.com/maps/place//data=!4m2!3m1!1s0x881614ce7c13acb
+      b:0x5c7b18bbf6ec4f7e?authuser=-1&amp;hl=en&amp;gl=us'
+    }
+    </div>
+    <p></p>
+    
+    <p>    
+    </p><ul>
+        <li><tt>name</tt> - name of the business</li>
+        <li><tt>address</tt> - address of the business</li>
+        <li><tt>gmap_id</tt> - ID of the business</li>
+        <li><tt>description</tt> - description of the business</li>
+        <li><tt>latitude</tt> - latitude of the business</li>
+        <li><tt>longitude</tt> - longitude of the business</li>
+        <li><tt>category</tt> - category of the business</li>
+        <li><tt>avg_rating</tt> - average rating of the business</li>
+        <li><tt>num_of_reviews</tt> - number of reviews</li>
+        <li><tt>price</tt> - price of the business</li>
+        <li><tt>hours</tt> - open hours</li>
+        <li><tt>MISC</tt> - MISC information</li>
+        <li><tt>state</tt> - the current status of the business (e.g., permanently closed)</li>
+        <li><tt>relative_results</tt> - relative businesses recommended by Google</li>
+        <li><tt>url</tt> - URL of the business</li>
+      </ul>
+    <p></p>
+
+  <h2>Download links</h2>
+
+  <p>See the <a href="https://jiachengli1995.github.io/google/index.html">Google Local Dataset Page</a> for download information.</p>
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+  <p>
+    <b>UCTopic: Unsupervised Contrastive Learning for Phrase Representations and Topic Mining</b><br>
+    Jiacheng Li, Jingbo Shang, Julian McAuley<br>
+    <em>Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2022<br>
+    <a href="https://aclanthology.org/2022.acl-long.426.pdf">pdf</a>
+  </p>
+  <br>
+  <p>
+    <b>Personalized Showcases: Generating Multi-Modal Explanations for Recommendations</b><br>
+    An Yan, Zhankui He, Jiacheng Li, Tianyang Zhang, Julian Mcauley<br>
+    <em>arXiv:2207.00422</em>, 2022<br>
+    <a href="https://arxiv.org/pdf/2207.00422.pdf">pdf</a>
+  </p>
+ <br>
+  <hr>
+
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Google Local Reviews",
+    	"description":"These datasets contain reviews about businesses from Google Local (Google Maps). Data includes geographic information for each business as well as reviews.\n\nMetadata includes\n\n* reviews and ratings\n\n* GPS coordinates and address\n\n* User information (places lived, jobs)\n\n* timestamps\n\n* business category, opening hours, etc.\n\nBasic Statistics:\n\n* Reviews: 11,453,845\n\n* Users: 4,567,431\n\n* Businesses: 3,116,785",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#google_local",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "Pasricha and McAuley (2018). Translation-based factorization machines for sequential recommendation. RecSys. https://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18a.pdf"
+	}
+</script>
+
+    <h1>Google Local Reviews (2018)</h1>
+
+  <h2>Description</h2>
+
+  <p>These datasets contain reviews about businesses from Google Local (Google Maps). Data includes geographic information for each business as well as reviews.</p>
+
+  <h2>Basic statistics</h2>
+
+<table class="code-table">
+  <tbody><tr> <td>Reviews:</td> <td>11,453,845</td> </tr>
+  <tr> <td>Users:</td> <td>4,567,431</td> </tr>
+  <tr> <td>Businesses:</td> <td>3,116,785</td> </tr>
+</tbody></table>
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>reviews and ratings</li>
+    <li>GPS coordinates and address</li>
+    <li>User information (places lived, jobs)</li>
+    <li>timestamps</li>
+    <li>business category, opening hours, etc.</li>
+  </ul>
+
+  <h2>Example (review)</h2>
+
+  <p>
+  </p><div class="code">{
+  'rating': 3.0,
+  'reviewerName': u'an lam',
+  'reviewText': u'Ch\u1ea5t l\u01b0\u1ee3ng t\u1ea1m \u1ed5n',
+  'categories': [u'Gi\u1ea3i Tr\xed - Caf\xe9'],
+  'gPlusPlaceId': u'108103314380004200232',
+  'unixReviewTime': 1372686659,
+  'reviewTime': u'Jul 1, 2013',
+  'gPlusUserId': u'100000010817154263736'
+}</div>
+  <p></p>
+
+  <h2>Example (business)</h2>
+
+  <p>
+  </p><div class="code">{
+  'name': u'Diamond Valley Lake Marina',
+  'price': None,
+  'address': [u'2615 Angler Ave', u'Hemet, CA 92545'],
+  'hours': [[u'Monday', [[u'6:30 am--4:15 pm']]], [u'Tuesday', [[u'6:30 am--4:15 pm']]], [u'Wednesday', [[u'6:30 am--4:15 pm']], 1], [u'Thursday', [[u'6:30 am--4:15 pm']]], [u'Friday', [[u'6:30 am--4:15 pm']]], [u'Saturday', [[u'6:30 am--4:15 pm']]], [u'Sunday', [[u'6:30 am--4:15 pm']]]],
+  'phone': u'(951) 926-7201',
+  'closed': False,
+  'gPlusPlaceId': '104699454385822125632',
+  'gps': [33.703804, -117.003209]
+}</div>
+  <p></p>
+
+  <h2>Download links</h2>
+
+  <p><a href="https://drive.google.com/file/d/1H7Y1mKstD1nKlyubhx0Qr_gKzmLcBw91/view?usp=share_link">Places Data</a> (276mb)</p>
+  <p><a href="https://drive.google.com/file/d/1ZiKmjCQdRhJNTCwsIqCxCFcrTRyXFeOK/view?usp=share_link">User Data</a> (178mb)</p>
+  <p><a href="https://drive.google.com/file/d/1blHLlSGf2i2NxC-EIUyqcnaLErZtt3KH/view?usp=share_link">Review Data</a> (1.4gb)</p>
+
+<!--   <p><a href="https://jmcauley.ucsd.edu/data/googlelocal/places.clean.json.gz">Places Data</a> (276mb)</p>
+  <p><a href="https://jmcauley.ucsd.edu/data/googlelocal/users.clean.json.gz">User Data</a> (178mb)</p>
+  <p><a href="https://jmcauley.ucsd.edu/data/googlelocal/reviews.clean.json.gz">Review Data</a> (1.4gb)</p>
+ -->
+<!--   <p><a href="http://deepyeti.ucsd.edu/jmcauley/datasets/googlelocal/places.clean.json.gz">Places Data</a> (276mb)</p>
+  <p><a href="http://deepyeti.ucsd.edu/jmcauley/datasets/googlelocal/users.clean.json.gz">User Data</a> (178mb)</p>
+  <p><a href="http://deepyeti.ucsd.edu/jmcauley/datasets/googlelocal/reviews.clean.json.gz">Review Data</a> (1.4gb)</p> -->
+ 
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+  <p>
+    <b>Translation-based factorization machines for sequential recommendation</b><br>
+    Rajiv Pasricha, Julian McAuley<br>
+    <em>RecSys</em>, 2018<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18a.pdf">pdf</a>
+  </p>
+
+  <p>
+    <b>Translation-based recommendation</b><br>
+    Ruining He, Wang-Cheng Kang, Julian McAuley<br>
+    <em>RecSys</em>, 2017<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/recsys17.pdf">pdf</a>
+  </p>
+
+ <br>
+  <hr>
+
+
+
+<a name="google_restaurants"></a>
+
+<script type="application/ld+json">
+    {
+      "@context":"http://schema.org/",
+      "@type":"Dataset",
+      "name":"Google Restaurants dataset",
+      "description":"This is a mutli-modal dataset for restaurants from Google Local (Google Maps). Data includes images and reviews posted by users, as well as metadata for each restaurant.",
+      "url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#google_restaurants",
+      "sameAs":"",
+      "version":1,
+      "fileFormat":"csv",
+      "creator":
+      {
+        "@type":"Organization","name":"UCSD CSE Research Project",
+        "url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+      },
+      "citation": "Yan, An, et al. Personalized Showcases: Generating Multi-Modal Explanations for Recommendations. arXiv preprint arXiv:2207.00422 (2022)."
+
+  }
+</script>
+
+  <h1>Google Restaurants</h1>
+
+  <h2>Description</h2>
+
+  <p>This is a mutli-modal dataset of restaurants from Google Local (Google Maps). Data includes images and reviews posted by users, as well as other metadata for each restaurant.</p>
+
+  <h2>Basic statistics</h2>
+
+  <table class="code-table">
+    <tbody><tr> <td></td> <td><b>subset</b></td> <td><b>full</b></td></tr>
+    <tr> <td>Restaurants:</td> <td>30K</td> <td>65K</td></tr>
+    <tr> <td>Users:</td> <td>37K</td> <td>1.01M</td></tr>
+    <tr> <td>Reviews:</td> <td>108K</td> <td>1.77M</td></tr>
+    <tr> <td>Images:</td> <td>203K</td> <td>4.43M</td></tr>
+  </tbody></table>
+
+  <h2>Metadata</h2>
+  <ul>
+    <li>Geographical location and address</li>
+    <li>Reviews, ratings and images</li>
+    <li>Timestamps</li>
+    <li>Business category, opening status, price, etc.</li>
+  </ul>
+
+  <h2>Example</h2>
+  <p>
+  </p><div class="code">
+    "name":"The Fish Spot",
+    "address":"5101 W Pico Blvd, Los Angeles, CA  90019",
+    "Description":null,
+    "Latitude":34.0481627,
+    "Longitude":-118.3494339,
+    "category":["Seafood restaurant"],
+    "gmap_url":"https://www.google.com/maps/place/The+Fish+Spot/",
+    "Avg_rating":4.3,
+    "Num_of_reviews":80,
+    "price":"$$",
+
+    "Reviews":
+    [
+      {"user_id":"111210125124533240892",
+      "time":"3 years ago",
+      "Rating":5,
+      "text":"Absolutely love this place.",
+      "pics":[
+        {"id":"AF1QipO1ejvRhkVBlg-v52UczxYMD7uebcZIhKC9uGud",
+         "url":["https://lh5.googleusercontent.com/p/"]},
+        ], 
+      "link":"https://www.google.com/maps/reviews/"}, 
+    ...,]
+  </div>
+  <p></p>
+
+  <h2>Download link</h2>
+
+  <p>See our <a href="https://drive.google.com/drive/folders/1lMyaUW8VgXEojpjiMMrt-VC5uPeZ3al0?usp=sharing" target="_blank" rel="noreferrer">Google Drive folder</a> containing all related files. The file <i>image_review_all.json</i> contains the full dataset, while <i>filter_all_t.json</i> is a subset with filtered review sentences that have higher correlation with images. Code is available in our <a href="https://github.com/zzxslp/Gest" target="_blank" rel="noreferrer">Github repository</a>.</p>
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+    <p>
+      <b>Personalized Showcases: Generating Multi-Modal Explanations for Recommendations</b><br>
+      An Yan, Zhankui He, Jiacheng Li, Tianyang Zhang, Julian Mcauley<br>
+      <em>arXiv:2207.00422</em>, 2022<br>
+      <a href="https://arxiv.org/pdf/2207.00422.pdf">pdf</a>
+    </p>
+
+   <br><hr>
+
+    <a name="steam_data"></a>
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Steam Video Game and Bundle Data",
+    	"description":"These datasets contain reviews from the Steam video game platform, and information about which games were bundled together.\n\nMetadata includes\n\n* reviews\n\n* purchases, plays, recommends (likes)\n\n* product bundles\n\n* pricing information\n\nBasic Statistics:\n\n* Reviews: 7,793,069\n\n* Users: 2,567,538\n\n* Items: 15,474\n\n* Bundles: 615",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#steam_data",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "Kang and McAuley (2018). Self-attentive sequential recommendation. ICDM. https://cseweb.ucsd.edu/~jmcauley/pdfs/icdm18.pdf"
+	}
+</script>
+
+    <h1>Steam Video Game and Bundle Data</h1>
+
+
+  <h2>Description</h2>
+
+  <p>These datasets contain reviews from the Steam video game platform, and information about which games were bundled together.</p>
+
+  <h2>Basic statistics</h2>
+
+<!-- <table class="code-table">
+  <tr> <td>Reviews:</td> <td>59,305</td> </tr>
+  <tr> <td>Purchases:</td> <td>5,153,209</td> </tr>
+  <tr> <td>Users:</td> <td>88,310</td> </tr>
+  <tr> <td>Items:</td> <td>10,978</td> </tr>
+  <tr> <td>Bundles:</td> <td>615</td> </tr>
+</table>
+ -->
+<table class="code-table">
+  <tbody><tr> <td>Reviews:</td> <td>7,793,069</td> </tr>
+  <tr> <td>Users:</td> <td>2,567,538</td> </tr>
+  <tr> <td>Items:</td> <td>15,474</td> </tr>
+  <tr> <td>Bundles:</td> <td>615</td> </tr>
+</tbody></table>
+
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>reviews</li>
+    <li>purchases, plays, recommends ("likes")</li>
+    <li>product bundles</li>
+    <li>pricing information</li>
+  </ul>
+
+  <h2>Example (bundle)</h2>
+
+  <p>
+  </p><div class="code">{
+  'bundle_final_price': '$29.66',
+  'bundle_url': 'http://store.steampowered.com/bundle/1482/?utm_source=SteamDB...',
+  'bundle_price': '$32.96',
+  'bundle_name': 'Two Tribes Complete Pack!',
+  'bundle_id': '1482',
+  'items': [{'genre': 'Casual, Indie', 'item_id': '38700', 'discounted_price': '$4.99', 'item_url': 'http://store.steampowered.com/app/38700', 'item_name': 'Toki Tori'}, {'genre': 'Adventure, Casual, Indie', 'item_id': '201420', 'discounted_price': '$14.99', 'item_url': 'http://store.steampowered.com/app/201420', 'item_name': 'Toki Tori 2+'}, {'genre': 'Strategy, Indie, Casual', 'item_id': '38720', 'discounted_price': '$4.99', 'item_url': 'http://store.steampowered.com/app/38720', 'item_name': 'RUSH'}, {'genre': 'Action, Indie', 'item_id': '38740', 'discounted_price': '$7.99', 'item_url': 'http://store.steampowered.com/app/38740', 'item_name': 'EDGE'}],
+  'bundle_discount': '10%'
+}</div>
+  <p></p>
+
+  <h2>Download links</h2>
+
+<!--   <p><a href="http://deepx.ucsd.edu/public/jmcauley/steam/australian_user_reviews.json.gz">Version 1: Review Data</a> (6.7mb)</p>
+  <p><a href="http://deepx.ucsd.edu/public/jmcauley/steam/australian_users_items.json.gz">Version 1: User and Item Data</a> (71mb)</p>
+  <p><a href="https://cseweb.ucsd.edu/~wckang/steam_reviews.json.gz">Version 2: Review Data</a> (1.3gb)</p>
+  <p><a href="https://cseweb.ucsd.edu/~wckang/steam_games.json.gz">Version 2: Item metadata</a> (2.7mb)</p>
+  <p><a href="http://deepx.ucsd.edu/public/jmcauley/steam/bundle_data.json.gz">Bundle Data</a> (92kb)</p>
+
+ -->
+  <!-- <p><a href="https://jmcauley.ucsd.edu/data/steam/australian_user_reviews.json.gz">Version 1: Review Data</a> (6.7mb)</p> -->
+  <!-- <p><a href="https://jmcauley.ucsd.edu/data/steam/australian_users_items.json.gz">Version 1: User and Item Data</a> (71mb)</p> -->
+  <p><a href="https://drive.google.com/file/d/1JKK0JnB2aL-1uUM6UGCpel7gls8me-GH/view?usp=share_link">Version 1: Review Data</a> (6.7mb)</p>
+  <p><a href="https://drive.google.com/file/d/1pZxvHa3yLzIAE15TYDQI7G5qrI8rJab_/view?usp=share_link">Version 1: User and Item Data</a> (71mb)</p>
+  <p><a href="https://cseweb.ucsd.edu/~wckang/steam_reviews.json.gz">Version 2: Review Data</a> (1.3gb)</p>
+  <p><a href="https://cseweb.ucsd.edu/~wckang/steam_games.json.gz">Version 2: Item metadata</a> (2.7mb)</p>
+  <p><a href="https://drive.google.com/file/d/1pY1eIYeWfUPHR3K38_wlO91M286Ul_od/view?usp=share_link">Bundle Data</a> (92kb)</p>
+  <!-- <p><a href="https://jmcauley.ucsd.edu/data/steam/bundle_data.json.gz">Bundle Data</a> (92kb)</p> -->
+
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+  <p>
+    <b>Self-attentive sequential recommendation</b><br>
+    Wang-Cheng Kang, Julian McAuley<br>
+    <em>ICDM</em>, 2018<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/icdm18.pdf">pdf</a>
+  </p>
+
+  <p>
+    <b>Item recommendation on monotonic behavior chains</b><br>
+    Mengting Wan, Julian McAuley<br>
+    <em>RecSys</em>, 2018<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18b.pdf">pdf</a>
+  </p>
+
+  <p>
+    <b>Generating and personalizing bundle recommendations on Steam</b><br>
+    Apurva Pathak, Kshitiz Gupta, Julian McAuley<br>
+    <em>SIGIR</em>, 2017<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/sigir17.pdf">pdf</a>
+  </p>
+
+  <br><hr>
+
+
+  <a name="goodreads"></a>
+ <script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Goodreads Book Reviews",
+    	"description":"These datasets contain reviews from the Goodreads book review website, and a variety of attributes describing the items. Critically, these datasets have multiple levels of user interaction, raging from adding to a shelf, rating, and reading.\n\nMetadata includes\n\n* reviews\n\n* add-to-shelf, read, review actions\n\n* book attributes: title, isbn\n\n* graph of similar books\n\nBasic Statistics:\n\n* Items: 1,561,465\n\n* Users: 808,749\n\n* Interactions: 225,394,930",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#goodreads",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "Wan and McAuley (2018). Item recommendation on monotonic behavior chains. RecSys. https://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18b.pdf"
+	}
+</script>
+
+    <h1>Goodreads Book Reviews</h1>
+
+    <p>These datasets contain reviews from the Goodreads book review website, and a variety of attributes describing the items. Critically, these datasets have multiple levels of user interaction, raging from adding to a "shelf", rating, and reading.</p>
+
+    <h2>Basic statistics</h2>
+
+<table class="code-table">
+  <tbody><tr> <td>Items:</td> <td>1,561,465</td> </tr>
+  <tr> <td>Users:</td> <td>808,749</td> </tr>
+  <tr> <td>Interactions:</td> <td>225,394,930</td> </tr>
+</tbody></table>
+
+<h2>Metadata</h2>
+
+  <ul>
+    <li>reviews</li>
+    <li>add-to-shelf, read, review actions</li>
+    <li>book attributes: title, isbn</li>
+    <li>graph of similar books</li>
+  </ul>
+
+  <h2>Example (interaction data)</h2>
+
+
+    <p>
+  </p><div class="code">{
+  "user_id": "8842281e1d1347389f2ab93d60773d4d",
+  "book_id": "130580",
+  "review_id": "330f9c153c8d3347eb914c06b89c94da",
+  "isRead": true,
+  "rating": 4,
+  "date_added": "Mon Aug 01 13:41:57 -0700 2011",
+  "date_updated": "Mon Aug 01 13:42:41 -0700 2011",
+  "read_at": "Fri Jan 01 00:00:00 -0800 1988",
+  "started_at": ""
+}</div>
+  <p></p>
+
+  <h2>Download links</h2>
+
+  <p>See our <a href="https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/home">project page</a> for download links.</p>
+
+  <h2>Citation</h2>
+
+    <p>Please cite the following if you use the data:</p>
+
+
+    <p>
+    <b>Item recommendation on monotonic behavior chains</b><br>
+    Mengting Wan, Julian McAuley<br>
+    <em>RecSys</em>, 2018<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18b.pdf">pdf</a>
+  </p>
+
+    <br><hr>
+
+
+
+  <a name="spoilers"></a>
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Goodreads Spoilers",
+    	"description":"These datasets contain reviews from the Goodreads book review website, along with annotated spoiler information from each review.\n\nMetadata includes\n\n* reviews\n\n* ratings\n\n* spoilers\n\nBasic Statistics:\n\n* Books: 25,475\n\n* Users: 18,892\n\n* Reviews: 1,378,033",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#spoilers",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "Wan et al. (2019). Fine-grained spoiler detection from large-scale review corpora. ACL. https://cseweb.ucsd.edu/~jmcauley/pdfs/acl19.pdf"
+	}
+</script>
+
+    <h1>Goodreads Spoilers</h1>
+
+    <p>These datasets contain reviews from the Goodreads book review website, along with annotated "spoiler" information from each review.</p>
+
+    <h2>Basic statistics</h2>
+
+<table class="code-table">
+  <tbody><tr> <td>Books:</td> <td>25,475</td> </tr>
+  <tr> <td>Users:</td> <td>18,892</td> </tr>
+  <tr> <td>Reviews:</td> <td>1,378,033</td> </tr>
+</tbody></table>
+
+<h2>Metadata</h2>
+
+  <ul>
+    <li>reviews</li>
+    <li>ratings</li>
+    <li>spoilers</li>
+    <li>see also metadata from the complete <a href="https://cseweb.ucsd.edu/~jmcauley/datasets.html#goodreads">Goodreads</a> dataset</li>
+  </ul>
+
+  <h2>Example (spoiler data)</h2>
+
+<p>Sentences are annotated as "1" if the sentence contains a spoiler, "0" otherwise.</p>
+
+    <p>
+  </p><div class="code">{
+  'user_id': '01ec1a320ffded6b2dd47833f2c8e4fb',                                                               
+  'timestamp': '2013-12-28',                                                                                   
+  'review_sentences': [[0, 'First, be aware that this book is not for the faint of heart.'],                   
+   [0, 'Human trafficking, drugs, kidnapping, abuse in all forms - this story contains all of this and more.'],
+   ...,                                                                                                        
+   [0, '(ARC provided by the author in return for an honest review.)']],                                       
+  'rating': 5,                                                                                                 
+  'has_spoiler': False,                                                                                        
+  'book_id': '18398089',                                                                                       
+  'review_id': '4b3ffeaf14310ac6854f140188e191cd'
+}</div>
+  <p></p>
+
+  <h2>Download links</h2>
+
+  <p>See our <a href="https://sites.google.com/eng.ucsd.edu/ucsdbookgraph/reviews">project page</a> for download links.</p>
+
+  <h2>Citation</h2>
+
+    <p>Please cite the following if you use the data:</p>
+
+
+    <p>
+    <b>Fine-grained spoiler detection from large-scale review corpora</b><br>
+    Mengting Wan, Rishabh Misra, Ndapa Nakashole, Julian McAuley<br>
+    <em>ACL</em>, 2019<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/acl19.pdf">pdf</a>
+  </p>
+
+    <br><hr>
+
+
+
+
+
+
+
+<a name="pinterest"></a>
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Pinterest Fashion Compatibility",
+    	"description":"This dataset contains images (scenes) containing fashion products, which are labeled with bounding boxes and links to the corresponding products.\n\nMetadata includes\n\n* product IDs\n\n* bounding boxes\n\nBasic Statistics:\n\n* Scenes: 47,739\n\n* Products: 38,111\n\n* Scene-Product Pairs: 93,274",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#pinterest",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "Kang et al. (2019). Complete the Look: Scene-based complementary product recommendation. CVPR. https://cseweb.ucsd.edu/~jmcauley/pdfs/cvpr19.pdf"
+	}
+</script>
+
+    <h1>Pinterest Fashion Compatibility</h1>
+
+    <p>This dataset contains images (scenes) containing fashion products, which are labeled with bounding boxes and links to the corresponding products.</p>
+
+    <h2>Basic statistics</h2>
+
+<table class="code-table">
+  <tbody><tr> <td>Scenes:</td> <td>47,739</td> </tr>
+  <tr> <td>Products:</td> <td>38,111</td> </tr>
+  <tr> <td>Scene-Product Pairs:</td> <td>93,274</td> </tr>
+</tbody></table>
+
+<h2>Metadata</h2>
+
+  <ul>
+    <li>product IDs</li>
+    <li>bounding boxes</li>
+  </ul>
+
+  <h2>Example (fashion.json)</h2>
+
+
+    <p>
+  </p><div class="code">{
+    "product": "0027e30879ce3d87f82f699f148bff7e", 
+    "scene": "cdab9160072dd1800038227960ff6467", 
+    "bbox": [
+        0.434097, 
+        0.859363, 
+        0.560254, 
+        1.0
+    ]
+}</div>
+  <p></p>
+
+  <h2>Download links</h2>
+
+  <p>See our <a href="https://github.com/kang205/STL-Dataset">project page</a> for download links, and for instructions as to how the product images can be collected from Pinterest.</p>
+
+  <h2>Citation</h2>
+
+    <p>Please cite the following if you use the data:</p>
+
+    <p>
+    <b>Complete the Look: Scene-based complementary product recommendation</b><br>
+    Wang-Cheng Kang, Eric Kim, Jure Leskovec, Charles Rosenberg, Julian McAuley<br>
+    <em>CVPR</em>, 2019<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/cvpr19.pdf">pdf</a>
+  </p>
+
+    <br><hr>
+
+
+   <a name="clothing_fit"></a>
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Clothing Fit Data",
+    	"description":"These datasets contain measurements of clothing fit from ModCloth and RentTheRunway.\n\nMetadata includes\n\n* ratings and reviews\n\n* fit feedback (small/fit/large etc.)\n\n* user/item measurements\n\n* category information",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#clothing_fit",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "Misra et al. (2018). Decomposing fit semantics for product size recommendation in metric spaces. RecSys. https://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18e.pdf"
+	}
+</script>
+
+    <h1>Clothing Fit Data</h1>
+
+    <h2>Description</h2>
+
+    <p>These datasets contain measurements of clothing fit from <em>ModCloth</em> and <em>RentTheRunway</em>.</p>
+
+    <h2>Basic statistics</h2>
+
+
+  <table class="code-table">
+    <tbody><tr> <td></td> <td><b>Modcloth</b></td> <td><b>Renttherunway</b></td></tr>
+    <tr> <td>Number of users:</td> <td>47,958</td> <td>105,508</td> </tr>
+    <tr> <td>Number of items:</td> <td>1,378</td> <td>5,850</td> </tr>
+    <tr> <td>Number of transactions:</td> <td>82,790</td> <td>192,544</td></tr>
+  </tbody></table>
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>ratings and reviews</li>
+    <li>fit feedback (small/fit/large etc.)</li>
+    <li>user/item measurements</li>
+    <li>category information</li>
+  </ul>
+
+  <h2>Example (RentTheRunway)</h2>
+
+  <p>
+  </p><div class="code">{
+  "fit": "fit",
+  "user_id": "420272",
+  "bust size": "34d",
+  "item_id": "2260466",
+  "weight": "137lbs",
+  "rating": "10",
+  "rented for": "vacation",
+  "review_text": "An adorable romper! Belt and zipper were a little hard to navigate in a full day of wear/bathroom use, but that's to be expected. Wish it had pockets, but other than that-- absolutely perfect! I got a million compliments.",
+  "body type": "hourglass",
+  "review_summary": "So many compliments!",
+  "category": "romper",
+  "height": "5' 8\"",
+  "size": 14,
+  "age": "28",
+  "review_date": "April 20, 2016"
+}</div>
+  <p></p>
+
+  <h2>Download links</h2>
+
+<!--   <p><a href="http://deepx.ucsd.edu/public/jmcauley/modcloth/modcloth_final_data.json.gz">Modcloth</a> (8.5mb)</p>
+  <p><a href="http://deepx.ucsd.edu/public/jmcauley/renttherunway/renttherunway_final_data.json.gz">Renttherunway</a> (31mb)</p>
+ -->
+<!--   <p><a href="https://jmcauley.ucsd.edu/data/modcloth/modcloth_final_data.json.gz">Modcloth</a> (8.5mb)</p>
+  <p><a href="https://jmcauley.ucsd.edu/data/renttherunway/renttherunway_final_data.json.gz">Renttherunway</a> (31mb)</p>
+ -->
+
+  <p><a href="https://drive.google.com/file/d/14Fap4pDJajHz5p_cfcYFSratGFaaFurq/view?usp=share_link">Modcloth</a> (8.5mb)</p>
+  <p><a href="https://drive.google.com/file/d/1Vz2Q-hwOfEQF9nyc0xKn-EglulUxGZVC/view?usp=share_link">Renttherunway</a> (31mb)</p>
+
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+  <p>
+    <b>Decomposing fit semantics for product size recommendation in metric spaces</b><br>
+    Rishabh Misra, Mengting Wan, Julian McAuley<br>
+    <em>RecSys</em>, 2018<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/recsys18e.pdf">pdf</a>
+  </p>
+
+
+    <br><hr>
+
+    <a name="bartering_data"></a>
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Product Exchange/Bartering Data",
+    	"description":"These datasets contain peer-to-peer trades from various recommendation platforms.\n\nMetadata includes\n\n* peer-to-peer trades\n\n* have and want lists\n\n* image data (tradesy)",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#bartering_data",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "Rappaz et al. (2017). Bartering books to beers: A recommender system for exchange platforms. WSDM. https://cseweb.ucsd.edu/~jmcauley/pdfs/wsdm17.pdf"
+	}
+</script>
+
+    <h1>Product Exchange/Bartering Data</h1>
+
+  <h2>Description</h2>
+
+  <p>These datasets contain peer-to-peer trades from various recommendation platforms.</p>
+
+  <h2>Basic statistics</h2>
+
+
+  <table class="code-table">
+    <tbody><tr> <td></td> <td><b>Tradesy</b></td> <td><b>Ratebeer</b></td> <td><b>Gameswap</b></td></tr>
+    <tr> <td>Number of users:</td> <td>128,152</td> <td>2,215</td> <td>9,888</td> </tr>
+    <tr> <td>Number of transactions:</td> <td>68,543</td> <td>125,665</td> <td>3,470</td></tr>
+  </tbody></table>
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>peer-to-peer trades</li>
+    <li>"have" and "want" lists</li>
+    <li>image data (tradesy)</li>
+  </ul>
+
+
+  <h2>Example (tradesy)</h2>
+
+  <p>
+  </p><div class="code">{
+  'lists':
+  {
+    'bought': ['466', '459', '457', '449'],
+    'selling': [],
+    'want': [],
+    'sold': ['104', '103', '102']
+  },
+  'uid': '2'
+}</div>
+  <p></p>
+
+  <h2>Download links</h2>
+
+  <!-- <p><a href="https://jmcauley.ucsd.edu/data/tradesy/tradesy.json.gz">Tradesy</a> (3.8mb)</p> -->
+  <p><a href="https://drive.google.com/file/d/1xaRS4qqGeTzxaEksHzjVKjQ6l7QT9eMJ/view?usp=share_link">Tradesy</a> (3.8mb)</p>
+  <!-- <p><a href="http://deepx.ucsd.edu/public/jmcauley/tradesy.json.gz">Tradesy</a> (3.8mb)</p> -->
+
+  <p>See the <a href="http://swapit.github.io/">project page</a> for ratebeer, gameswap (and other) datasets</p>
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+  <p>
+    <b>Bartering books to beers: A recommender system for exchange platforms</b><br>
+    Jérémie Rappaz, Maria-Luiza Vladarean, Julian McAuley, Michele Catasta<br>
+    <em>WSDM</em>, 2017<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/wsdm17.pdf">pdf</a>
+  </p>
+
+  <p>
+    <b>VBPR: Visual bayesian personalized ranking from implicit feedback</b><br>
+    Ruining He, Julian McAuley<br>
+    <em>AAAI</em>, 2016<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/aaai16.pdf">pdf</a>
+  </p>
+
+
+  <br><hr>
+
+
+  <a name="behance"></a>
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Behance Community Art Data",
+    	"description":"Likes and image data from the community art website Behance. This is a small, anonymized, version of a larger proprietary dataset.\n\nMetadata includes\n\n* appreciates (likes)\n\n* timestamps\n\n* extracted image features\n\nBasic Statistics:\n\n* Users: 63,497\n\n* Items: 178,788\n\n* Appreciates (likes): 1,000,000",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#behance",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "He et al. (2016). Vista: A visually, socially, and temporally-aware model for artistic recommendation. RecSys. https://cseweb.ucsd.edu/~jmcauley/pdfs/recsys16.pdf"
+	}
+</script>
+
+  <h1>Behance Community Art Data</h1>
+
+
+  <h2>Description</h2>
+
+  <p>Likes and image data from the community art website Behance. This is a small, anonymized, version of a larger proprietary dataset.</p>
+
+  <h2>Basic statistics</h2>
+
+<table class="code-table">
+  <tbody><tr> <td>Users:</td> <td>63,497</td> </tr>
+  <tr> <td>Items:</td> <td>178,788</td> </tr>
+  <tr> <td>Appreciates ("likes"):</td> <td>1,000,000</td> </tr>
+</tbody></table>
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>appreciates (likes)</li>
+    <li>timestamps</li>
+    <li>extracted image features</li>
+  </ul>
+
+  <h2>Example ("appreciate" data)</h2>
+
+  <p> Each entry is a user, item, timestamp triple:</p>
+
+  <p>
+  </p><div class="code">276633 01588231 1307583271
+1238354 01529213 1307583273
+165550 00485000 1307583337
+2173258 00776972 1307583340
+165550 00158226 1307583406
+1238354 01540285 1307583495
+2459267 01578261 1307583509
+165550 00264669 1307583518
+165550 00171501 1307583536</div>
+  <p></p>
+
+  <h2>Code to read image features</h2>
+
+  <p>
+  </p><div class="code">import struct
+def readImageFeatures(path):
+  f = open(path, 'rb')
+  while True:
+    itemId = f.read(8)
+    if itemId == '': break
+    feature = struct.unpack('f'*4096, f.read(4*4096))
+    yield itemId, feature</div>
+  <p></p>
+
+  <h2>Download links</h2>
+
+  <p>See our <a href="https://drive.google.com/drive/folders/0B9Ck8jw-TZUEc3NlMjVXdDlPU1k?resourcekey=0-6_8ykn0o4fLc5fuTEm91xA">Google Drive folder</a> containing all Behance files. The folder also contains additional documentation.</p>
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+  <p>
+    <b>Vista: A visually, socially, and temporally-aware model for artistic recommendation</b><br>
+    Ruining He, Chen Fang, Zhaowen Wang, Julian McAuley<br>
+    <em>RecSys</em>, 2016<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/recsys16.pdf">pdf</a>
+  </p>
+
+
+<br><hr>
+
+
+    <a name="social_data"></a>
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Social Recommendation Data",
+    	"description":"These datasets include ratings as well as social (or trust) relationships between users. Data are from LibraryThing (a book review website) and epinions (general consumer reviews).\n\nMetadata includes\n\n* reviews\n\n* price paid (epinions)\n\n* helpfulness votes (librarything)\n\n* flags (librarything)",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#social_data",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "Cai et al. (2017). SPMC: Socially-aware personalized Markov chains for sparse sequential recommendation. IJCAI. https://cseweb.ucsd.edu/~jmcauley/pdfs/ijcai17.pdf"
+	}
+</script>
+
+    <h1>Social Recommendation Data</h1>
+
+
+  <h2>Description</h2>
+
+  <p>These datasets include ratings as well as social (or trust) relationships between users. Data are from <a href="https://www.librarything.com/">LibraryThing</a> (a book review website) and <a href="http://www.epinions.com/">epinions</a> (general consumer reviews).</p>
+
+  <h2>Basic statistics</h2>
+
+  <table class="code-table">
+    <tbody><tr> <td></td> <td><b>Librarything</b></td> <td><b>Epinions</b></td></tr>
+    <!-- <tr> <td>Number of users:</td> <td>73,882</td> <td>41,554</td> </tr>
+    <tr> <td>Number of items:</td> <td>337,561</td> <td>112,991</td> </tr> -->
+    <tr> <td>Number of users:</td> <td>73,882</td> <td>116,260</td> </tr>
+    <tr> <td>Number of items:</td> <td>337,561</td> <td>41,269</td> </tr>
+    <tr> <td>Number of ratings/feedback:</td> <td>979,053</td> <td>181,394</td> </tr>
+    <tr> <td>Number of social relations:</td> <td>120,536</td> <td>181,304</td> </tr>
+  </tbody></table>
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>reviews</li>
+    <li>price paid (epinions)</li>
+    <li>helpfulness votes (librarything)</li>
+    <li>flags (librarything)</li>
+  </ul>
+
+  <h2>Example (LibraryThing reviews)</h2>
+
+  <p>
+  </p><div class="code">{
+  'work': '3067',
+  'flags': [],
+  'unixtime': 1160265600,
+  'stars': 4.5,
+  'nhelpful': 0,
+  'time': 'Oct 8, 2006',
+  'comment': 'great storytelling in this novel about a couple crossed by a time travelling disorder ',
+  'user': 'justine'
+}</div>
+  <p></p>
+
+  <h2>Example (LibraryThing social network)</h2>
+
+  <p>
+  </p><div class="code">Rodo anehan
+Rodo sevilemar
+Rodo dingsi
+Rodo slash
+RelaxedReader AnnRig
+RelaxedReader bookbroke
+RelaxedReader Bumpersmom
+RelaxedReader DivaColumbus
+RelaxedReader AnnRig
+RelaxedReader bookbroke
+RelaxedReader BookWorm2729
+RelaxedReader Bumpersmom</div>
+  <p></p>
+
+
+
+  <h2>Download links</h2>
+
+<!--   <p><a href="http://deepyeti.ucsd.edu/jmcauley/datasets/librarything/lthing_data.tar.gz">LibraryThing</a> (594mb)</p>
+
+  <p><a href="http://deepyeti.ucsd.edu/jmcauley/datasets/epinions/epinions_data.tar.gz">epinions</a> (66mb)</p>
+ -->
+
+<!--   <p><a href="https://jmcauley.ucsd.edu/data/librarything/lthing_data.tar.gz">LibraryThing</a> (594mb)</p>
+
+  <p><a href="https://jmcauley.ucsd.edu/data/epinions/epinions_data.tar.gz">epinions</a> (66mb)</p>
+ -->
+
+  <p><a href="https://drive.google.com/file/d/1wgXv14TyrRD5DH6ZfJqApFymQv7_vuho/view?usp=share_link">LibraryThing</a> (594mb)</p>
+
+  <p><a href="https://drive.google.com/file/d/1lxypFK_7gS0avjMQbzpfZe0IXW_mioUj/view?usp=share_link">epinions</a> (66mb)</p>
+
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+  <p>
+    <b>SPMC: Socially-aware personalized Markov chains for sparse sequential recommendation</b><br>
+    Chenwei Cai, Ruining He, Julian McAuley<br>
+    <em>IJCAI</em>, 2017<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/ijcai17a.pdf">pdf</a>
+  </p>
+
+  <p>
+    <b>Improving latent factor models via personalized feature projection for one-class recommendation</b><br>
+    Tong Zhao, Julian McAuley, Irwin King<br>
+    <em>Conference on Information and Knowledge Management (CIKM)</em>, 2015<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/cikm15.pdf">pdf</a>
+  </p>
+
+  <br>
+  <hr>
+
+
+<h1>Other Non-Recommender-Systems Datasets</h1>
+
+<h2>Description</h2>
+
+<p>Below are various datasets collected by my lab that are not related to recommender systems specifically. Formats of these datasets vary, so their respective project pages should be consulted for further details.</p>
+
+<br><hr>
+
+  <a name="dogwhistle"></a>
+ <script type="application/ld+json">
+    {
+      "@context":"http://schema.org/",
+      "@type":"Dataset",
+      "name":"DogWhistle: Cant Understanding Data",
+      "description":"DogWhistle is a Chinese dataset collected from the historical records for an online game. It provides hidden words and the cant for them, with human answers. The dataset is suitable for semantic similarity evaluation for large language models.",
+      "sameAs":"",
+      "version":1,
+      "fileFormat":"json",
+      "creator":
+      {
+        "@type":"Organization","name":"UCSD CSE Research Project",
+        "url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+      },
+      "citation": "Xu et al. (2021). Blow the Dog Whistle: A Chinese Dataset for Cant Understanding with Common Sense and World Knowledge. NAACL. https://www.aclweb.org/anthology/2021.naacl-main.172.pdf"
+  }
+</script>
+
+    <h1>DogWhistle: Cant Understanding Data</h1>
+
+    <p>DogWhistle is a Chinese dataset collected from the historical records for an online game. It provides hidden words and the cant for them, with human answers. The dataset is suitable for semantic similarity evaluation for large language models.</p>
+
+    <h2>Basic statistics</h2>
+
+<table class="code-table">
+  <tbody><tr> <th></th> <th>train</th> <th>dev</th> <th>test</th> </tr>
+  <tr> <td>Games:</td> <td>9,817</td> <td>1,161</td> <td>1,143</td> </tr>
+  <tr> <td>Rounds:</td> <td>76,740</td> <td>9,593</td> <td>9,592</td> </tr>
+  <tr> <td>Word Combinations:</td> <td>18,832</td> <td>2,243</td> <td>2,220</td> </tr>
+  <tr> <td>Unique words:</td> <td>1,878</td> <td>1,809</td> <td>1,820</td> </tr>
+  <tr> <td>Cant:</td> <td>230,220</td> <td>28,779</td> <td>28,776</td> </tr>
+</tbody></table>
+
+<h2>Metadata</h2>
+
+  <ul>
+    <li>cant and the hidden words</li>
+    <li>cant history</li>
+    <li>human answers</li>
+  </ul>
+
+  <h2>Example (insider subtask)</h2>
+
+
+    <p>
+  </p><div class="code">
+    0 高铁,周末,无情,条纹 冷漠,休息,斑马  冷漠  2
+    1 高铁,周末,无情,条纹 冷漠,休息,斑马  休息  1
+    2 高铁,周末,无情,条纹 冷漠,休息,斑马  斑马  3
+  </div>
+  <p></p>
+
+  <h2>Download links</h2>
+
+  <p>Please refer to our <a href="https://competitions.codalab.org/competitions/30451">leaderboard page</a> for the instruction of how to download.</p>
+
+  <h2>Citation</h2>
+
+    <p>Please cite the following if you use the data:</p>
+
+
+    <p>
+    <b>Blow the Dog Whistle: A Chinese Dataset for Cant Understanding with Common Sense and World Knowledge</b><br>
+    Canwen Xu, Wangchunshu Zhou, Tao Ge, Ke Xu, Julian McAuley, Furu Wei<br>
+    <em>NAACL</em>, 2021<br>
+    <a href="https://www.aclweb.org/anthology/2021.naacl-main.172.pdf">pdf</a>
+  </p>
+
+    <br><hr>
+
+    <a name="dancedance"></a>
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Video Game Music and Dance Data",
+    	"description":"Step charts from the video game Dance Dance Revolution, and audio files from the NES platform.\n\nBasic Statistics:\n\n* Num songs (DDR): 223 (7 hours)\n\n* Num charts (DDR): 1,102\n\n* Num games (NES): 397\n\n* Num songs (NES): 5,278 (46 hours)\n\n* Num notes (NES): 2,325,636",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#dancedance",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "Donahue et al. (2018). Dance Dance Convolution. ISMIR. https://cseweb.ucsd.edu/~jmcauley/pdfs/ismir18.pdf"
+	}
+</script>
+
+    <h1>Video Game Data</h1>
+
+    <h2>Description</h2>
+
+    <p>Step charts from the video game <em>Dance Dance Revolution</em>, and audio files from the NES platform.</p>
+
+    <h2>Basic statistics</h2>
+
+<table class="code-table">
+  <tbody><tr> <td>Num songs (DDR):</td> <td>223 (7 hours)</td> </tr>
+  <tr> <td>Num charts (DDR):</td> <td>1,102</td> </tr>
+  <tr> <td>Num games (NES):</td> <td>397</td> </tr>
+  <tr> <td>Num songs (NES):</td> <td>5,278 (46 hours)</td> </tr>
+  <tr> <td>Num notes (NES):</td> <td>2,325,636</td> </tr>
+</tbody></table>
+
+  <h2>Download links</h2>
+
+  <p>See the project pages for <a href="https://github.com/chrisdonahue/ddc">Dance Dance Convolution</a> and <a href="https://github.com/chrisdonahue/nesmdb">NES MDB</a> for further details and links to the data</p>
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+  <p>
+    <b>Dance Dance Convolution</b><br>
+    Chris Donahue, Zachary Lipton, Julian McAuley<br>
+    <em>ICML</em>, 2017<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/icml17.pdf">pdf</a>
+  </p>
+
+  <p>
+    <b>The NES Music Database: A symbolic music dataset with expressive performance attributes</b><br>
+    Chris Donahue, Henry Mao, Julian McAuley<br>
+    <em>International Society for Music Information Retrieval Conference (ISMIR)</em>, 2018<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/ismir18.pdf">pdf</a>
+  </p>
+
+  <br><hr>
+
+
+  <a name="multi_aspect"></a>
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Multi-aspect Reviews",
+    	"description":"These datasets include reviews with multiple rated dimensions.",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#multi_aspect",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "McAuley et al. (2012). Learning attitudes and attributes from multi-aspect reviews. ICDM. https://cseweb.ucsd.edu/~jmcauley/pdfs/icdm12.pdf"
+	}
+</script>
+
+  <h1>Multi-aspect Reviews</h1>
+
+  <h2>Description</h2>
+
+  <p>These datasets include reviews with multiple rated dimensions. The most comprehensive of these are beer review datasets from Ratebeer and Beeradvocate, which include sensory aspects such as taste, look, feel, and smell.</p>
+
+  <h2>Basic statistics</h2>
+
+  <table class="code-table">
+    <tbody><tr> <td></td> <td><b>Ratebeer</b></td> <td><b>BeerAdvocate</b></td></tr>
+    <tr> <td>Number of users:</td> <td>40,213</td> <td>33,387</td> </tr>
+    <tr> <td>Number of items:</td> <td>110,419</td> <td>66,051</td> </tr>
+    <tr> <td>Number of ratings/reviews:</td> <td>2,855,232</td> <td>1,586,259</td> </tr>
+    <tr> <td>Timespan:</td> <td>Apr 2000 - Nov 2011</td> <td>Jan 1998 - Nov 2011</td> </tr>
+  </tbody></table>
+
+
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>reviews</li>
+    <li>aspect-specific ratings (taste, look, feel, smell, overall impression)</li>
+    <li>product category</li>
+    <li>ABV</li>
+  </ul>
+
+  <h2>Example (ratebeer)</h2>
+
+  <p>
+  </p><div class="code">beer/name: John Harvards Simcoe IPA
+beer/beerId: 63836
+beer/brewerId: 8481
+beer/ABV: 5.4
+beer/style: India Pale Ale (IPA)
+review/appearance: 4/5
+review/aroma: 6/10
+review/palate: 3/5
+review/taste: 6/10
+review/overall: 13/20
+review/time: 1157587200
+review/profileName: hopdog
+review/text: On tap at the Springfield, PA location. Poured a deep and cloudy orange (almost a copper) color with a small sized off white head. Aromas or oranges and all around citric. Tastes of oranges, light caramel and a very light grapefruit finish. I too would not believe the 80+ IBUs - I found this one to have a very light bitterness with a medium sweetness to it. Light lacing left on the glass.</div>
+  <p></p>
+
+
+  <h2>Download links</h2>
+
+<!--   <p><a href="https://jmcauley.ucsd.edu/data/beer/beeradvocate.json.gz">BeerAdvocate</a> (433mb)</p>
+  <p><a href="https://jmcauley.ucsd.edu/data/beer/ratebeer.json.gz">RateBeer</a> (388mb)</p>
+  <p><a href="https://jmcauley.ucsd.edu/data/beer/labeled_sentences_alexander.csv">Sentences with aspect labels (annotator 1)</a> (758kb)</p>
+  <p><a href="https://jmcauley.ucsd.edu/data/beer/labeled_sentences_antonio.csv">Sentences with aspect labels (annotator 2)</a> (759kb)</p>
+ -->
+  <p><a href="https://drive.google.com/file/d/13PyTbMEs8lDJ0Vs5yM4eJyKfIE9UFyE7/view?usp=share_link">BeerAdvocate</a> (433mb)</p>
+  <p><a href="https://drive.google.com/file/d/1SHOys2fSU-MnZk-l47fVm5j_J-_JeW_w/view?usp=share_link">RateBeer</a> (388mb)</p>
+  <p><a href="https://drive.google.com/file/d/1iD5Dr6W80CTF9gkABgeQ5u1Xt6giyQJJ/view?usp=share_link">Sentences with aspect labels (annotator 1)</a> (758kb)</p>
+  <p><a href="https://drive.google.com/file/d/10C4j-2TvWnQzbLDsOww1fCjlaW2fawBN/view?usp=share_link">Sentences with aspect labels (annotator 2)</a> (759kb)</p>
+
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+  <p>
+    <b>Learning attitudes and attributes from multi-aspect reviews</b><br>
+    Julian McAuley, Jure Leskovec, Dan Jurafsky<br>
+    <em>International Conference on Data Mining (ICDM)</em>, 2012<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/icdm12.pdf">pdf</a>
+  </p>
+
+  <p>
+    <b>From amateurs to connoisseurs: modeling the evolution of user expertise through online reviews</b><br>
+    Julian McAuley, Jure Leskovec<br>
+    <em>WWW</em>, 2013<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/www13.pdf">pdf</a>
+  </p>
+
+
+  <br><hr>
+
+
+  <a name="socialcircles"></a>
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Social Circles",
+    	"description":"These datasets contain social connections and circles from Facebook, Twitter, and Google Plus.\n\nMetadata includes\n\n* social connections\n\n* circles (sets of friends sharing a common property)\n\n* user metadata",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#socialcircles",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "McAuley and Leskovec (2012). Learning to Discover Social Circles in Ego Networks. NIPS. https://cseweb.ucsd.edu/~jmcauley/pdfs/nips12.pdf"
+	}
+</script>
+
+  <h1>Social Circles</h1>
+
+  <h2>Description</h2>
+
+  <p>These datasets contain social connections and "circles" from Facebook, Twitter, and Google Plus.</p>
+
+  <h2>Basic statistics</h2>
+
+  <table class="code-table">
+    <tbody><tr> <td></td> <td><b>Facebook</b></td> <td><b>Twitter</b></td> <td><b>Google Plus</b></td></tr>
+    <tr> <td>Number of networks:</td> <td>10</td> <td>133</td> <td>1,000</td> </tr>
+    <tr> <td>Number of nodes:</td> <td>4,039</td> <td>106,674</td> <td>192,075</td> </tr>
+    <tr> <td>Number of circles:</td> <td>193</td> <td>479</td> <td>5,541</td> </tr>
+  </tbody></table>
+
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>social connections</li>
+    <li>circles (sets of friends sharing a common property)</li>
+    <li>user metadata</li>
+  </ul>
+
+  <h2>Example (Kaggle egonet data)</h2>
+
+  <p>
+  </p><div class="code">UserId: Friends
+1: 4 6 12 2 208
+2: 5 3 17 90 7</div>
+  <p></p>
+
+
+  <h2>Download links</h2>
+
+  <p>See SNAP <a href="https://snap.stanford.edu/data/egonets-Facebook.html">facebook</a>, <a href="https://snap.stanford.edu/data/egonets-Twitter.html">twitter</a>, and <a href="https://snap.stanford.edu/data/egonets-Gplus.html">Google Plus</a> data, as well as the <a href="https://www.kaggle.com/c/learning-social-circles/data">Kaggle competition</a> based on the same data.</p>
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+  <p>
+    <b>Learning to Discover Social Circles in Ego Networks</b><br>
+    Julian McAuley, Jure Leskovec<br>
+    <em>Neural Information Processing Systems (NIPS)</em>, 2012<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/nips12.pdf">pdf</a>
+  </p>
+
+  <br><hr>
+
+    <a name="reddit"></a>
+<script type="application/ld+json">
+   	{
+   		"@context":"http://schema.org/",
+    	"@type":"Dataset",
+    	"name":"Reddit Submissions",
+    	"description":"Submissions of reddit posts (and in particular resubmissions of the same content) along with metadata.\n\nMetadata includes\n\n* timestamps\n\n* upvotes/downvotes\n\n* post title, subreddit, etc.\n\nBasic Statistics:\n\n* Num of submissions (images): 132,308\n\n* Num of unique images: 16,736\n\n* Timespan July 2008 - January 2013",
+    	"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html#reddit",
+     	"sameAs":"",
+    	"version":1,
+    	"fileFormat":"json",
+    	"creator":
+    	{
+    		"@type":"Organization","name":"UCSD CSE Research Project",
+    		"url":"https://cseweb.ucsd.edu/~jmcauley/datasets.html"
+    	},
+    	"citation": "Lakkaraju et al. (2013). Understanding the interplay between titles, content, and communities in social media. ICWSM. https://cseweb.ucsd.edu/~jmcauley/pdfs/icwsm13.pdf"
+	}
+</script>
+
+    <h1>Reddit Submissions</h1>
+
+  <h2>Description</h2>
+
+  <p>Submissions of reddit posts (and in particular resubmissions of the same content) along with metadata.</p>
+
+  <h2>Basic statistics</h2>
+
+
+<table class="code-table">
+  <tbody><tr> <td>Num of submissions (images):</td> <td>132,308</td> </tr>
+  <tr> <td>Num of unique images:</td> <td>16,736</td> </tr>
+  <tr> <td>Timespan</td> <td>July 2008 - January 2013</td> </tr>
+</tbody></table>
+
+
+  <h2>Metadata</h2>
+
+  <ul>
+    <li>timestamps</li>
+    <li>upvotes/downvotes</li>
+    <li>post title, subreddit, etc.</li>
+  </ul>
+
+  <h2>Example</h2>
+
+  <p>
+  </p><div class="code">#image_id,unixtime,rawtime,title,total_votes,reddit_id,...
+number_of_downvotes,localtime,score,number_of_comments,username
+1005,1335861624,2012-05-01T15:40:24.968266-07:00,I immediately regret this decision,27,t296r,20,pics,7,1335886824,13,0,ninjaroflmaster
+1005,1336470481,2012-05-08T16:48:01.418140-07:00,"Pushing your friend into the water,Level: 99",18,tds4i,16,funny,2,1336495681,14,0,hme4
+1005,1339566752,2012-06-13T12:52:32.371941-07:00,I told him. He Didn't Listen,6,v0cma,4,funny,2,1339591952,2,0,HeyPatWhatsUp
+1005,1342200476,2012-07-14T00:27:56.857805-07:00,Don't end up as this guy.,16,wjivx,7,funny,9,1342225676,-2,2,catalyst24</div>
+  <p></p>
+
+
+  <h2>Download links</h2>
+
+  <p><a href="http://snap.stanford.edu/data/redditSubmissions.csv.gz">resubmissions data</a> (7.3mb)</p>
+  <p><a href="http://snap.stanford.edu/data/redditHtmlData.tar.gz">raw html of resubmissions</a> (1.8gb)</p>
+
+
+  <p>See also the SNAP <a href="https://snap.stanford.edu/data/web-Reddit.html">project page</a>.</p>
+
+  <h2>Citation</h2>
+
+  <p>Please cite the following if you use the data:</p>
+
+  <p>
+    <b>Understanding the interplay between titles, content, and communities in social media</b><br>
+    Himabindu Lakkaraju, Julian McAuley, Jure Leskovec<br>
+    <em>ICWSM</em>, 2013<br>
+    <a href="https://cseweb.ucsd.edu/~jmcauley/pdfs/icwsm13.pdf">pdf</a>
+  </p>
+
+  <br><hr>
+
+
+  <p>Questions and comments to <a href="https://cseweb.ucsd.edu/~jmcauley/">Julian McAuley</a></p>
+
+</div>
+
+<script type="text/javascript">
+if (typeof jQuery != 'undefined') {
+  jQuery(document).ready(function($) {
+    var filetypes = /\.(zip|exe|pdf|doc*|xls*|ppt*|mp3)$/i;
+    var baseHref = '';
+    if (jQuery('base').attr('href') != undefined)
+      baseHref = jQuery('base').attr('href');
+    jQuery('a').each(function() {
+      var href = jQuery(this).attr('href');
+      if (href && (href.match(/^https?\:/i)) && (!href.match(document.domain))) {
+        jQuery(this).click(function() {
+          var extLink = href.replace(/^https?\:\/\//i, '');
+          _gaq.push(['_trackEvent', 'External', 'Click', extLink]);
+          if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+            setTimeout(function() { location.href = href; }, 200);
+            return false;
+          }
+        });
+      }
+      else if (href && href.match(/^mailto\:/i)) {
+        jQuery(this).click(function() {
+          var mailLink = href.replace(/^mailto\:/i, '');
+          _gaq.push(['_trackEvent', 'Email', 'Click', mailLink]);
+        });
+      }
+      else if (href && href.match(filetypes)) {
+        jQuery(this).click(function() {
+          var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+          var filePath = href;
+          _gaq.push(['_trackEvent', 'Download', 'Click-' + extension, filePath]);
+          if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+            setTimeout(function() { location.href = baseHref + href; }, 200);
+            return false;
+          }
+        });
+      }
+    });
+  });
+}
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23010657-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+
+</body></html>

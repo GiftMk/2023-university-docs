@@ -1,0 +1,20 @@
+20:02:23.926 [main] INFO  uc.seng301.cardbattler.lab6.App - Starting application...
+20:02:39.512 [main] INFO  uc.seng301.cardbattler.lab6.Game - User input: d scmas
+20:02:39.513 [main] INFO  uc.seng301.cardbattler.lab6.Game - User entered invalid input, d scmas
+20:02:43.518 [main] INFO  uc.seng301.cardbattler.lab6.Game - User input: help
+20:02:54.561 [main] INFO  uc.seng301.cardbattler.lab6.Game - User input: create_player 
+20:03:07.611 [main] INFO  uc.seng301.cardbattler.lab6.Game - User input: create_player Gift
+20:03:07.863 [main] INFO  uc.seng301.cardbattler.lab6.Game - Valid input, created user 1: Gift
+20:03:11.625 [main] INFO  uc.seng301.cardbattler.lab6.Game - User input: help
+20:03:21.665 [main] INFO  uc.seng301.cardbattler.lab6.Game - User input: create_deck Gift Gift
+20:03:21.709 [main] INFO  uc.seng301.cardbattler.lab6.Game - Valid input, created deck 1 for user 1 with name Gift
+20:03:31.692 [main] INFO  uc.seng301.cardbattler.lab6.Game - User input: shelp
+20:03:31.692 [main] INFO  uc.seng301.cardbattler.lab6.Game - User entered invalid input, shelp
+20:03:37.722 [main] INFO  uc.seng301.cardbattler.lab6.Game - User input: help
+20:03:53.786 [main] INFO  uc.seng301.cardbattler.lab6.Game - User input: draw Gift Gift
+20:03:53.835 [main] INFO  uc.seng301.cardbattler.lab6.cards.CardService - Fetching card with id: 282
+20:03:54.633 [main] INFO  uc.seng301.cardbattler.lab6.cards.CardService - Api responded with status code: 200
+20:04:10.847 [main] INFO  uc.seng301.cardbattler.lab6.Game - User input: print Gift
+20:04:18.880 [main] INFO  uc.seng301.cardbattler.lab6.Game - User input: Gif
+20:04:18.880 [main] INFO  uc.seng301.cardbattler.lab6.Game - User entered invalid input, Gif
+20:04:21.893 [main] INFO  uc.seng301.cardbattler.lab6.Game - User input: print Gif

@@ -1,0 +1,42 @@
+20:02:25.071 [main] DEBUG org.hibernate.SQL - create table HTE_player(id_player bigint, name varchar(255), rn_ integer not null, hib_sess_id char(36) not null, primary key (rn_, hib_sess_id))
+20:02:25.074 [main] DEBUG org.hibernate.SQL - create table HTE_deck(id_deck bigint, name varchar(255), id_player bigint, rn_ integer not null, hib_sess_id char(36) not null, primary key (rn_, hib_sess_id))
+20:02:25.075 [main] DEBUG org.hibernate.SQL - create table HTE_card(id_card bigint, attack integer, cardPosition smallint, id_deck bigint, defence integer, life integer, name varchar(255), rn_ integer not null, hib_sess_id char(36) not null, primary key (rn_, hib_sess_id))
+20:02:25.168 [main] DEBUG org.hibernate.SQL - drop table if exists card
+20:02:25.169 [main] DEBUG org.hibernate.SQL - drop table if exists card_SEQ
+20:02:25.169 [main] DEBUG org.hibernate.SQL - drop table if exists deck
+20:02:25.169 [main] DEBUG org.hibernate.SQL - drop table if exists deck_SEQ
+20:02:25.169 [main] DEBUG org.hibernate.SQL - drop table if exists player
+20:02:25.169 [main] DEBUG org.hibernate.SQL - drop table if exists player_SEQ
+20:02:25.170 [main] DEBUG org.hibernate.SQL - create table card (id_card bigint not null, attack integer not null, cardPosition smallint, defence integer not null, life integer not null, name varchar(255), id_deck bigint, primary key (id_card))
+20:02:25.171 [main] DEBUG org.hibernate.SQL - create table card_SEQ (next_val bigint)
+20:02:25.172 [main] DEBUG org.hibernate.SQL - insert into card_SEQ values ( 1 )
+20:02:25.172 [main] DEBUG org.hibernate.SQL - create table deck (id_deck bigint not null, name varchar(255), id_player bigint, primary key (id_deck))
+20:02:25.173 [main] DEBUG org.hibernate.SQL - create table deck_SEQ (next_val bigint)
+20:02:25.173 [main] DEBUG org.hibernate.SQL - insert into deck_SEQ values ( 1 )
+20:02:25.173 [main] DEBUG org.hibernate.SQL - create table player (id_player bigint not null, name varchar(255), primary key (id_player))
+20:02:25.174 [main] DEBUG org.hibernate.SQL - create table player_SEQ (next_val bigint)
+20:02:25.174 [main] DEBUG org.hibernate.SQL - insert into player_SEQ values ( 1 )
+20:03:07.829 [main] DEBUG org.hibernate.SQL - select p1_0.id_player,p1_0.name from player p1_0 where p1_0.name='Gift'
+20:03:07.838 [main] DEBUG org.hibernate.SQL - select next_val as id_val from player_SEQ
+20:03:07.839 [main] DEBUG org.hibernate.SQL - update player_SEQ set next_val= ? where next_val=?
+20:03:07.859 [main] DEBUG org.hibernate.SQL - insert into player (name, id_player) values (?, ?)
+20:03:21.669 [main] DEBUG org.hibernate.SQL - select p1_0.id_player,p1_0.name from player p1_0 where p1_0.name='Gift'
+20:03:21.700 [main] DEBUG org.hibernate.SQL - select d1_0.id_player,d1_0.id_deck,d1_0.name from deck d1_0 where d1_0.id_player=?
+20:03:21.703 [main] DEBUG org.hibernate.SQL - select next_val as id_val from deck_SEQ
+20:03:21.703 [main] DEBUG org.hibernate.SQL - update deck_SEQ set next_val= ? where next_val=?
+20:03:21.707 [main] DEBUG org.hibernate.SQL - insert into deck (name, id_player, id_deck) values (?, ?, ?)
+20:03:53.796 [main] DEBUG org.hibernate.SQL - select p1_0.id_player,p1_0.name from player p1_0 where p1_0.name='Gift'
+20:03:53.802 [main] DEBUG org.hibernate.SQL - select d1_0.id_player,d1_0.id_deck,d1_0.name from deck d1_0 where d1_0.id_player=?
+20:03:53.812 [main] DEBUG org.hibernate.SQL - select c1_0.id_deck,c1_0.id_card,c1_0.attack,c1_0.cardPosition,c1_0.defence,c1_0.life,c1_0.name from card c1_0 where c1_0.id_deck=?
+20:03:53.834 [main] DEBUG org.hibernate.SQL - select d1_0.id_deck,d1_0.name,d1_0.id_player from deck d1_0 where d1_0.name='Gift' and d1_0.id_player=1
+20:04:00.818 [main] DEBUG org.hibernate.SQL - select next_val as id_val from card_SEQ
+20:04:00.818 [main] DEBUG org.hibernate.SQL - update card_SEQ set next_val= ? where next_val=?
+20:04:00.824 [main] DEBUG org.hibernate.SQL - insert into card (attack, cardPosition, id_deck, defence, life, name, id_card) values (?, ?, ?, ?, ?, ?, ?)
+20:04:00.845 [main] DEBUG org.hibernate.SQL - select d1_0.id_deck,c1_0.id_deck,c1_0.id_card,c1_0.attack,c1_0.cardPosition,c1_0.defence,c1_0.life,c1_0.name,d1_0.name,p1_0.id_player,p1_0.name from deck d1_0 left join card c1_0 on d1_0.id_deck=c1_0.id_deck left join player p1_0 on p1_0.id_player=d1_0.id_player where d1_0.id_deck=?
+20:04:00.850 [main] DEBUG org.hibernate.SQL - select d1_0.id_player,d1_0.id_deck,d1_0.name from deck d1_0 where d1_0.id_player=?
+20:04:00.852 [main] DEBUG org.hibernate.SQL - select c1_0.id_card,c1_0.attack,c1_0.cardPosition,d1_0.id_deck,d1_0.name,p1_0.id_player,p1_0.name,c1_0.defence,c1_0.life,c1_0.name from card c1_0 left join deck d1_0 on d1_0.id_deck=c1_0.id_deck left join player p1_0 on p1_0.id_player=d1_0.id_player where c1_0.id_card=?
+20:04:00.858 [main] DEBUG org.hibernate.SQL - update card set id_deck=? where id_card=?
+20:04:10.850 [main] DEBUG org.hibernate.SQL - select p1_0.id_player,p1_0.name from player p1_0 where p1_0.name='Gift'
+20:04:10.857 [main] DEBUG org.hibernate.SQL - select d1_0.id_player,d1_0.id_deck,d1_0.name from deck d1_0 where d1_0.id_player=?
+20:04:10.863 [main] DEBUG org.hibernate.SQL - select c1_0.id_deck,c1_0.id_card,c1_0.attack,c1_0.cardPosition,c1_0.defence,c1_0.life,c1_0.name from card c1_0 where c1_0.id_deck=?
+20:04:21.901 [main] DEBUG org.hibernate.SQL - select p1_0.id_player,p1_0.name from player p1_0 where p1_0.name='Gif'

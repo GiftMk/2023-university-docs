@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Import the React, React-Dom and Babel libraries from unpkg -->
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/babel-standalone@6.26.0/babel.js"
+    ></script>
+    <script type="text/babel">
+      const rootElement = document.getElementById("root");
+
+      const App = () => {
+        return (
+          <div>
+            <ShoppingList />
+          </div>
+        );
+      };
+
+      const ShoppingList = () => {
+        const items = [
+          { name: "bread", price: 2.75 },
+          { name: "milk", price: 2.5 },
+          { name: "pasta", price: 1.99 },
+        ];
+
+        const calculateTotal = () => {
+          return items.map((item) => item.price).reduce((a, b) => a + b);
+        };
+
+        let visible = true;
+        if (visible) {
+          return (
+            <div>
+              <h1>My Shopping List</h1>
+              <ul>
+                {items.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      {item.name}: {item.price}
+                    </li>
+                  );
+                })}
+              </ul>
+              <h3>Total: ${calculateTotal()}</h3>
+            </div>
+          );
+        }
+      };
+
+      ReactDOM.render(<App />, rootElement);
+    </script>
+  </body>
+</html>
